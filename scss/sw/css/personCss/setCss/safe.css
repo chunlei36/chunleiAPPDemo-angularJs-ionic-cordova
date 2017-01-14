@@ -1,0 +1,30 @@
+#safesList .list {
+	margin-top: 2rem;
+}
+
+#safesList .item-avatar {
+	height: 8rem;
+}
+
+#safesList a{
+	margin-top:0.5rem ;
+	padding: 1.2rem 4.9rem 1.6rem 2rem !important ;
+	position: relative;
+}
+#safesList h2{
+	font-size: 1rem;
+}
+#safesList .item-avatar{
+	height: 3rem;
+}
+#safesList i{
+	top:-0.5rem
+}
+#safesList #i1{
+	font-size: 1.8rem;
+	position: absolute;
+	margin-bottom: 5rem;
+	top: 1rem;
+	left: 1rem;
+	color: #999999;
+}

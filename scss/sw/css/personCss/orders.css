@@ -1,0 +1,30 @@
+
+
+#orderList .list {
+	margin-top: 2rem;
+}
+
+#orderList .item-avatar {
+	height: 8rem;
+}
+
+#orderList img {
+	max-width: 8rem;
+	max-height: 6rem;
+	width: 8rem;
+	height: 6rem;
+	border-radius: 0;
+}
+
+#orderList h2,
+#orderList p {
+	margin-top: 1rem;
+	margin-left: 12rem;
+}
+#orderList .item-content{
+	padding-left: 0!important;
+}
+#orderList i {
+	margin-left: 12rem;
+	color: #FF3B30;
+}

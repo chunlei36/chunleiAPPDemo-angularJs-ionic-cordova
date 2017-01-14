@@ -1,0 +1,18 @@
+<ion-view view-title="账户与安全">
+	<link rel="stylesheet" type="text/css" href="css/personCss/setCss/setcom.css"/>
+	<link rel="stylesheet" type="text/css" href="css/personCss/setCss/safe.css"/>
+	<ion-header-bar align-title="left" class="bar-positive">
+		<a href="#/tab/set"><i class="ion-ios-arrow-left"></i></a>
+		<h1 class="title">账户与安全</h1>
+		<i class="ion-ios-more-outline"></i>
+	</ion-header-bar>
+	<ion-content>
+	<ion-list id="safesList">
+	     	<ion-item class="item-remove-animate item-avatar item-icon-right" 
+	      	ng-repeat="safe in safes" type="item-text-wrap" 
+	      	href="#/tab/{{safe.id}}">
+	        <h2>{{safe.name}}</h2>
+	        <i class="icon ion-chevron-right icon-accessory"></i>
+	      </ion-item>
+	   </ion-list>
+</ion-view>

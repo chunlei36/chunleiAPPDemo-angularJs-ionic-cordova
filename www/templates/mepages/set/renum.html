@@ -1,0 +1,109 @@
+<ion-view hide-tabs="true">
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	
+	<style type="text/css">
+		#set_back {
+			color: white;
+			line-height: 2rem;
+		}
+		
+		.renum_article {
+			width: 95%;
+			margin: 0 auto;
+		}
+		
+		.renum_article input {
+			width: 100%;
+			height: 4rem;
+			font-size: 1rem;
+		}
+		
+		.renum_article #yzm1 {
+			border: 1px solid #b5b5b5;
+			display: inline-block;
+			width: 8rem;
+			height: 2.5rem;
+			font-size: 1rem;
+			text-align: center;
+			line-height: 2.5rem;
+			background: transparent;
+			cursor: pointer;
+		}
+		.renum_article span{
+			line-height: 2rem;
+			color: #adadad;
+		}
+		.renum_article p {
+			display: none;
+			color: red;
+		}
+		
+		.item {
+			border-left: none;
+			border-right: none;
+		}
+		
+		.set_submit1 {
+			width: 80%;
+			margin: 10% 0 0 10%;
+		}		
+		.set_submit1 input {
+			width: 100%;
+			height: 3rem;
+			background: #CCCCCC;
+			border: none;
+			border-radius: 3px;
+			font-size: 1.2rem;
+			color: #FFFFFF;
+		}
+		#set_back{
+			color: white;			
+			font-size: 1.3rem;
+			line-height: 2rem;	
+		}
+	</style>
+
+	
+	
+				<div class="header2">
+
+		<a href="#/tab/set" class="returnpages3"><i class="ion-ios-arrow-left"></i></a>
+		<span>修改手机号</span>
+	</div>
+	
+	
+	
+	
+	<ion-content>
+		<div id="alltop">
+
+		</div>
+
+		<div class="renum_article">
+			<span><<<请输入您当前绑定的手机号>>></span>
+			<div class="item item-input">
+				<input type="text" placeholder="输入当前手机号" required class="phone_number1">
+				<p class="num_err1">输入内容不正确</p>
+			</div>
+			<div class="item item-input">
+				<input type="number" placeholder="输入验证码" class="sy_yzm1">
+				<p class="yzm_err1">验证码输入错误</p><i id="yzm1" ng-click="yzmm()">获取验证码</i>
+			</div>
+			<span><<<请输入您需要绑定的新手机号>>></span>
+
+			<div class="item item-input">
+				<input type="text" placeholder="国家和地区"><span>中国大陆+86&nbsp;></span>
+			</div>
+			<div class="item item-input">
+				<input type="text" placeholder="输入新手机号" class="new_pwd1">
+				<p class="pwd_err1">新手机号输入错误</p>
+				<p class="pwd_err2">不能与原手机号相同</p>
+			</div>
+
+		</div>
+		<div class="set_submit1" ng-click="qd()">
+			<input type="submit" value="确定" />
+		</div>
+
+	</ion-content>
+</ion-view>

@@ -1,0 +1,75 @@
+#cartList .list {
+	margin-top: 2rem;
+}
+
+#cartList .item-avatar {
+	height: 8rem;
+}
+
+#cartList  img {
+	max-width: 8rem;
+	max-height: 6rem;
+	width: 8rem;
+	height: 6rem;
+	border-radius: 0;
+}
+#cartList h2,
+#cartList p,
+#cartList i {
+	position: relative;
+	left: 12rem;
+	top: -6rem;
+}
+
+#cartList .item-content {
+	padding-left: 0!important;
+}
+
+#cartList i {
+	margin-top: 4rem;
+	color: #FF3B30;
+}
+#cartList .item-checkbox{
+	position: absolute;
+	border: none;
+	left: 0;
+}
+#cartList .item-checkbox i{
+	position: relative;
+	top: -4.5rem;
+	left: 0.5rem;
+}
+#cartList .checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before{
+	background: #FE625F;
+    border-color: #FE625F;
+}
+#cartf{
+	background-image: none;
+	border-top: 1px solid #DDDDDD;
+	height: 4rem;
+	background-color: white;
+
+}
+#cartf h2 p{
+	font-size: 0.5rem;
+	color: #636363;
+}
+#cartf h2{
+	color: #FD6363;
+	position: relative;
+	top: -0.5rem;
+	margin-left: 3rem;
+	font-size: 1rem;
+}
+#cartf h1{
+	color: #FD6363;
+	border-left:1px solid #DDDDDD ;
+	margin-left: 4rem;
+	font-size: 1rem;
+	padding-left: 1rem;
+}
+#cartf .item-checkbox{
+	color: #333333;
+	border: none;
+
+}

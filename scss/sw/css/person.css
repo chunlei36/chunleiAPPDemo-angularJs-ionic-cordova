@@ -1,0 +1,76 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#avatar{
+	width: 100%;
+	height: 15rem;
+	background:url(../img/pensonImage/bg2.jpg) no-repeat;
+	background-size: 120%;
+	filter: blur(2px);
+}
+#des{
+	width: 100%;
+	height: 3rem;
+	
+}
+#des>i{
+	float: right;
+	display: block;
+	height: 70%;
+	width: 10%;
+	background:url(../img/pensonImage/shezhi.png) no-repeat;
+}
+#nav{
+	width: 100%;
+	height: 3rem;
+	position: absolute;
+	top: 0;
+}
+#avatar1{
+
+	margin: 0 auto;
+	margin-top: 18%;
+	text-align: center;
+	width: 5rem;
+	height: 5rem;
+}
+#avatar1>i{
+	margin: 0 auto;
+	display: block;
+	width: 75%;
+	height: 75%;
+	background-image: url(../img/pensonImage/avatar.jpg);
+	background-size: 100%;
+	border: 1px solid white;
+	border-right:50%;
+}
+#avatar1>p{
+	text-align: center;
+	margin-top: 0.5rem;
+	font-size: 1rem;
+	color: #FFFFFF;
+}
+/*列表*/
+#personList a{
+	margin-top:0.5rem ;
+	padding: 1.2rem 4.9rem 1.6rem 4rem !important ;
+	position: relative;
+}
+#personList h2{
+	font-size: 1.2rem;
+}
+#personList .item-avatar{
+	height: 3rem;
+}
+#personList i{
+	top:-0.5rem
+}
+#personList #i1{
+	font-size: 1.8rem;
+	position: absolute;
+	margin-bottom: 5rem;
+	top: 1rem;
+	left: 1rem;
+	color: #999999;
+}

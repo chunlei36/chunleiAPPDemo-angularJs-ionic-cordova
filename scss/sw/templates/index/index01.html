@@ -1,0 +1,77 @@
+<ion-view hide-tabs="true">
+<link rel="stylesheet" type="text/css" href="css/indexCss/index01.css"/>
+	<!--头部-->
+	<ion-header-bar id="header01" class="bar-header">
+		<a class="icon ion-ios-arrow-left" href="#/tab/dash"></a>
+		<span>1条评论</span>
+	</ion-header-bar>
+	<!--内容-->
+	<ion-content class="padding" id="content01" ng-controller="index01Ctrl" on-swipe-right="onSwipeRight1()">
+		<h4><i>原创</i>果粉的颜色之旅-银白与鲜红的美妙碰撞</h4>
+		<p>Tom&nbsp;&nbsp;|&nbsp;&nbsp;全新</p>
+		<p>作为一个果粉，买买买是一种开心的体验，剁剁剁是最愉快的事。而作为大学狗，又不想给家里添加太大的负担，所以只好不停的攒钱， 只为给自己一个良好的体验感。 从iPhone4开始，我就很喜欢白色，白色背板的iPhone就像一块无暇的碧玉，哪怕后来苹果叫它银色， 我也没有放弃对它的喜爱。而苹果的配件， 我觉得最漂亮的还是被称之为Product Red的大红色。银白与鲜红，构成了我最爱的数码。 找到一张很久以前拍过的图，还是6sp时代的
+		</p>
+		<img src="img/indexImages/indexImg01.jpeg" alt="" />
+		<!--sellBox  01-->
+		<p>
+			第一天从盒子里拿出iPhone6Plus的时候，就爱上了5.5寸带来的绝妙手感，毕竟是个女汉子，从小弹琴的手也是可以一手掌握5.5寸。 首发当日抢亮黑色的我，也许是被跟钢琴一样的颜色冲昏了头脑。手慢的我发货日期果断被排到11月， 这怎么能等，只好退款打算直营店预约。等待退款的过程中，突然发现自己还是喜欢着银色，所以立即转战预约了银色，终于在9月18日踏上了去南京直营店取机的高铁。
+		</p>
+		<img src="img/indexImages/indexImg011.jpeg" />
+		<a href="#/tab/detail/detail01" id="sellBox">
+			<img class="sellImg" src="img/indexImages/indexImg012.jpeg" />
+			<div>
+				<p>iPhone 7 Plus</p>
+				<p>全新&nbsp;&nbsp;|&nbsp;<span></span>&nbsp;&nbsp;购买</p>
+			</div>
+		</a>
+		<!--sellBox  02-->
+		<p>下一个，来说一下我的iPad。高二时候老妈为了让我录音，给我买了一个iPad，考虑便携性于是当年买了iPad mini2。但我图样图森破了，16G的iPad存不了多少东西。上了大学，只好丢给了在家里用的老妈，自己偷偷攒钱买了一个iPad mini4，考虑到学校没有无线网，只好加了点钱买了插卡版，直接上了顶配128G，颜色不言而喻咯，银色</p>
+		<img src="img/indexImages/indexImg013.jpeg" alt="" />
+		<a href="#/tab/detail/detail02" id="sellBox">
+			<img class="sellImg" src="img/indexImages/indexImg014.jpeg" />
+			<div>
+				<p>苹果 iPad mini4</p>
+				<p>全新&nbsp;&nbsp;|&nbsp;<span></span>&nbsp;&nbsp;购买</p>
+			</div>
+		</a>
+		<!--评论-->
+		<div id="thumb" ng-click="addThumb()">
+			<i class="icon ion-thumbsup"></i>
+		</div>
+		<p class="center">{{thumb}}次赞</p>
+
+		<p id="commentTitle">评论
+			<span>(点击可以进行回复)</span>
+			<button ng-click="showPopup()">我来说两句</button>
+		</p>
+		<div id="comment" ng-click="show()">
+			<img src="img/indexImages/indexImg015.jpg" />
+			<div>
+				<p>
+					Scenery如懿
+				</p>
+				<p>
+					等我哪天有兴趣的时候整理出我的粉色套装出来。
+				</p>
+			</div>
+		</div>
+			<p id="answerOther">
+				<b></b>
+				<i>{{uname}}我 &nbsp; : &nbsp;{{answerContent}}</i>
+			</p>
+		<div id="answer">
+			<img src="{{user.img}}"/>
+			<div>
+				<p>
+					{{user.uname}}
+				</p>
+				<p>
+					{{data.wifi}}
+				</p>
+			</div>
+			
+		</div>
+
+	</ion-content>
+
+</ion-view>

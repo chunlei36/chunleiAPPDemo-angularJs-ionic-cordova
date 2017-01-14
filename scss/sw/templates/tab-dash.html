@@ -1,0 +1,38 @@
+<ion-view view-title="dash" ng-app="DashCtrl">
+	<link rel="stylesheet" type="text/css" href="css/dash.css" />
+	<!--头部-->
+	<ion-header-bar id="header" class="bar-header">
+		<div id="searchIcon">
+			<a class="icon ion-ios-search-strong" href="#/tab/chats"></a>
+		</div>
+		<div id="carBox">
+			<a id="car" class="icon ion-ios-cart" ng-click="toCar()"></a>
+		</div>
+		<div id="logoBox">
+			<img src="img/indexImages/appLogo.png" /><span>欢迎来到晒网！</span>
+		</div>
+		<input id="scrollInp" type="text" ng-click="toClassify()" placeholder="搜索值得买的好物" />
+	</ion-header-bar>
+	<ion-content on-scroll="onScroll()">
+		<!--banner轮播-->
+		<ion-slide-box show-pager="true" on-slide-changed="slideHasChanged($index)" auto-play="true" slide-interval="4000" delegate-handle="slideimgs" does-continue="true">
+			<ion-slide ng-repeat="i in imgs" on-slide-changed="slideHasChanged($index)" auto-play="true" does-continue="true" slide-interval=2000 show-pager="true" pager-click="pageClick(index)" active-slide="model.activeIndex">
+				<div class="box">
+					<img src="{{i.img}}" />
+				</div>
+			</ion-slide>
+		</ion-slide-box>
+
+		<div id="content">
+			<ion-item id="goods" ng-repeat="g in goods" href="#/tab/{{g.url}}">
+				<img src="{{g.src}}" alt="" />
+				<h5>{{g.title}}</h5>
+				<p>{{g.pname}}&nbsp;&nbsp;|&nbsp;&nbsp; <span> {{g.quality}}</span></p>
+			</ion-item>
+		</div>
+		<ion-infinite-scroll distance="1%">
+
+		</ion-infinite-scroll>
+	</ion-content>
+	
+</ion-view>

@@ -1,0 +1,21 @@
+<ion-view view-title="我的订单" hide-tabs>
+	<link rel="stylesheet" type="text/css" href="css/personCss/personcom.css"/>
+	<link rel="stylesheet" type="text/css" href="css/personCss/orders.css" />
+	<ion-header-bar align-title="left" class="bar-positive" id="ordersh">
+		<a href="#/tab/person"><i class="ion-ios-arrow-left"></i></a>
+		<h1 class="title">我的订单</h1>
+		<i class="ion-ios-search"></i>
+		<i class="ion-ios-more-outline"></i>
+	</ion-header-bar>
+
+	<ion-content>
+		<ion-list id="orderList">
+			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="order in orders" type="item-text-wrap" href="#/tab/orders/{{order.id}}">
+				<img ng-src="{{order.simg}}">
+				<h2>{{order.product}}</h2>
+				<p>{{order.id}}</p>
+				<i>{{order.state}}</i>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

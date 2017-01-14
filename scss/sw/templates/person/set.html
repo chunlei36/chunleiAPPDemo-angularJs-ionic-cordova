@@ -1,0 +1,25 @@
+<ion-view view-title="我的设置" hide-tabs>
+	<link rel="stylesheet" type="text/css" href="css/personCss/setCss/setcom.css"/>
+	<link rel="stylesheet" type="text/css" href="css/personCss/set.css"/>
+	<ion-header-bar align-title="left" class="bar-positive" id="ordersh">
+		<a href="#/tab/person"><i class="ion-ios-arrow-left"></i></a>
+		<h1 class="title">我的设置</h1>
+		<i class="ion-ios-more-outline"></i>
+	</ion-header-bar>
+	<ion-content>
+	<ion-list id="setList">
+	     	<ion-item class="item-remove-animate item-avatar item-icon-right" 
+	      	ng-repeat="set in sets" type="item-text-wrap" 
+	      	href="#/tab/{{set.id}}">
+	      	<img ng-src="{{set.news}}"/>
+	        <h2>{{set.name}}</h2>
+	        <i class="icon ion-chevron-right icon-accessory"></i>
+	      </ion-item>
+	    </ion-list>
+	 </ion-content>
+	 	<ion-footer-bar align-title="center" class="bar-assertive">
+
+			<a href="#/tab/dash"><h1 class="title">退出当前账户</h1></a>
+
+	</ion-footer-bar>
+</ion-view>

@@ -1,0 +1,84 @@
+<ion-view hide-tabs="true">
+<link rel="stylesheet" type="text/css" href="css/indexCss/index01.css" />
+	<!--头部-->
+	<ion-header-bar id="header01" class="bar-header">
+		<a class="icon ion-ios-arrow-left" href="#/tab/dash"></a>
+		<span>1条评论</span>
+	</ion-header-bar>
+	<!--内容-->
+	<ion-content class="padding" id="content01" ng-controller="index01Ctrl" on-swipe-right="onSwipeRight()">
+		<h4><i>原创</i>十多年学生党的学习用品使用报告</h4>
+		<p>Jerry&nbsp;&nbsp;|&nbsp;&nbsp;全新</p>
+		<p>作为我大天朝的学生党（虽然我现在不是了）学习用品陪伴这我们度过了不知多少日夜 有时候我觉得它们就好像我的朋友*^_^*好用的是好朋友 不好用的是讨厌鬼 下面介绍一些我曾经的学习用品 （很多用的连包装纸都残破了-.-）
+		</p>
+		<img src="img/indexImages/indexImg02.jpeg" alt="" />
+		<!--sellBox  01-->
+		<p>
+			不记得啥牌子了 照抄了一遍标志上的英文 真心好用 用力划也不会破坏纸张 很容易遮盖写错的部分
+		</p>
+		<img src="img/indexImages/indexImg022.jpeg" />
+		<a href="#/tab/detail/detail03" id="sellBox">
+			<img class="sellImg" src="img/indexImages/indexImg021.jpeg" />
+			<div>
+				<p style="font-size: 0.8rem;">普乐士WH-624G 修正带</p>
+				<p>全新&nbsp;&nbsp;|&nbsp;<span></span>&nbsp;&nbsp;购买</p>
+			</div>
+		</a>
+		<!--sellBox  02-->
+		<p>橡皮也很重要的！主要是铅笔橡皮和钢笔橡皮 分别介绍2款</p>
+		<img src="img/indexImages/indexImg023.jpeg" alt="" />
+		<a href="#/tab/detail/detail04" id="sellBox">
+			<img class="sellImg" src="img/indexImages/indexImg024.jpeg" />
+			<div>
+				<p>施德楼 525橡皮</p>
+				<p>全新&nbsp;&nbsp;|&nbsp;<span></span>&nbsp;&nbsp;购买</p>
+			</div>
+		</a>
+		<a href="#/tab/detail/detail05" id="sellBox">
+			<img class="sellImg" src="img/indexImages/indexImg025.jpeg" />
+			<div>
+				<p>蜻蜓 钢笔橡皮</p>
+				<p>全新&nbsp;&nbsp;|&nbsp;<span></span>&nbsp;&nbsp;购买</p>
+			</div>
+		</a>
+		<!--评论-->
+		<div id="thumb" ng-click="addThumb()">
+			<i class="icon ion-thumbsup"></i>
+		</div>
+		<p class="center">{{thumb}}次赞</p>
+
+		<p id="commentTitle">评论
+			<span>(点击可以进行回复)</span>
+			<button ng-click="showPopup()">我来说两句</button>
+		</p>
+		<div id="comment" ng-click="show()">
+			<img src="img/indexImages/indexImg015.jpg" />
+			<div>
+				<p>
+					Scenery如懿
+				</p>
+				<p>
+					等我哪天有兴趣的时候整理出我的粉色套装出来。
+				</p>
+			</div>
+		</div>
+		<p id="answerOther">
+			<b></b>
+			<i>{{uname}}我 &nbsp; : &nbsp;{{answerContent}}</i>
+		</p>
+		<div id="answer">
+			<img src="{{user.img}}" />
+			<div>
+				<p>
+					{{user.uname}}
+				</p>
+				<p>
+					{{data.wifi}}
+				</p>
+			</div>
+
+		</div>
+
+	</ion-content>
+
+</ion-view>

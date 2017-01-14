@@ -1,0 +1,26 @@
+<ion-view hide-tabs>
+	<link rel="stylesheet" type="text/css" href="css/accountCss/accountcom.css" />
+	<link rel="stylesheet" type="text/css" href="css/accountCss/news.css" />
+	<ion-header-bar align-title="left" class="bar-positive">
+		<a href="#/tab/account"><i class="ion-ios-arrow-left"></i></a>
+		<h1 class="title">{{news.uname}}</h1>
+	</ion-header-bar>
+	<ion-content id="ar">
+		<article>
+			<div class="clearfloat aa">
+				<div class="att">
+					<img src="{{news.simg}}" />
+				</div>
+				<div class="text">
+					{{news.news}}
+				</div>
+			</div>
+		</article>
+
+	</ion-content>
+	<ion-footer-bar id="bt">
+		<span></span>
+		<input type="text" id="wen" placeholder="有问题就问我吧" />
+		<button id="btn" ng-click="sett()">发送</button>
+	</ion-footer-bar>
+</ion-view>

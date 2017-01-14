@@ -1,0 +1,24 @@
+{
+	"index.html": {
+		"resources": [
+			"js/app.js",
+			"lib/ionic/js/ionic.bundle.js",
+			"templates/index/index04.html",
+			"lib/angular.min.js",
+			"lib/jquery-1.11.0.js",
+			"js/services.js",
+			"css/style.css",
+			"templates/detail/detail02.html",
+			"lib/ionic/css/ionic.css",
+			"templates/detail/detail01.html",
+			"js/indexCtrl.js",
+			"js/controllers.js",
+			"templates/detail/pay.html",
+			"templates/register.html",
+			"templates/login.html",
+			"lib/angular-touch.min.js",
+			"templates/start.html",
+			"templates/tab2.html"
+		]
+	}
+}

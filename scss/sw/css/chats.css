@@ -1,0 +1,76 @@
+
+/*导航栏*/
+#scrollleft{
+	padding: 1rem 0;
+	padding-left: 0.5rem;
+	white-space: nowrap;
+	}
+#scrollleft a{
+	font-size: 0.8rem;
+	display: inline-block;
+	padding: 0.2rem 1.2rem;
+	color: #636363;
+	background: #f4f4f4;
+	border-radius:2.7rem ;
+}
+#scrollleft .fg{
+	background: #fe625f;
+	color: #FFFFFF;
+}
+.ion-record:before{
+	content: ' ';
+}
+
+/*文本栏*/
+.box{
+	width: 100%;
+	height: 10rem;
+	background: #fe625f;
+}
+.lists{
+	width: 44%;
+	float: left;
+	margin-left:4% ;
+	background: #FFFFFF;
+	margin-top: 1rem;
+	border: 0.1rem solid #eee;
+	box-shadow: 0.2rem 0.2rem 0.2rem #F8F8F8;
+}
+.lists img{
+	width: 100%;
+	height: 6rem;
+}
+.art{
+	padding: 1rem 0;
+}
+.like{
+	font-size: 1rem;
+}
+#content>p{
+	padding: 0 0.7rem;
+}
+#content>p:last-child>*{
+	color: #999;
+}
+#content>p:last-child>span{
+	float: left;
+}
+#content>p:last-child>a{
+	float: right;
+}
+#content>p:nth-child(2)>*{
+	color: rgba(0, 0, 0, 0.83)
+}
+.assertive:before{
+	color: #FE625F;
+}
+
+.art{
+	height:100%;
+}
+.scroll-content{
+	padding-bottom: 3rem;
+}
+.pm{
+	font-size: 0.8rem;
+}

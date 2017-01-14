@@ -1,0 +1,166 @@
+article {
+	background-color: #fff;
+}
+
+.header_bar22 {
+	position: relative;
+}
+
+.header_bar_img img {
+	width: 100%;
+}
+
+.header_bar_img .slider-pager {
+	display: none;
+}
+
+.header_bar_top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.header_bar_top img {
+	width: 25px;
+}
+
+.nav_left {
+	float: left;
+	margin: 1rem 0 0 1rem;
+}
+
+.nav_right {
+	float: right;
+	margin: 1rem 1rem 0 0;
+}
+
+.nav2_1>* {
+	/*color: #fff;*/
+	text-align: center;
+	color: #fff;
+}
+
+.nav2_1 h1 {
+	font-size: 1.8rem;
+}
+
+.nav2 {
+	margin-top: -11rem;
+	position: relative;
+	width: 100%;
+}
+
+.nav2_1 h3 {
+	font-size: 1rem;
+	font-weight: 100;
+}
+
+.nav2_2 {
+	width: 90%;
+	margin-left: 5%;
+	background-color: #fff;
+	height: 6rem;
+	margin-top: 3.5rem;
+	border-radius: 0.5rem;
+	border: 1px solid #eee;
+	box-shadow: 1px 3px 5px #eee;
+}
+
+.nav2_2 a {
+	display: block;
+	float: left;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+}
+
+.nav2_2 a img {
+	height: 70%;
+	margin-top: 15%;
+}
+
+.section1>h1 {
+	text-align: center;
+	font-size: 2rem;
+	line-height: 2rem;
+	margin-top: 2rem;
+	color: #333;
+}
+
+.box_shop {
+	width: 96%;
+	margin: 1rem auto;
+	/*box-shadow: 0px 0px 2px #ccc;*/
+}
+
+#box_shop1 {
+	float: left;
+	width: 100%;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+#box_shop1>a>img {
+	width: 94%;
+	margin-left: 3%;
+}
+
+#box_shop1>div {
+	margin-left: 3%;
+}
+
+#box_shop1>div>h2 {
+	font-size: 1rem;
+}
+
+#box_shop1>div>span {
+	font-size: 1rem;
+	color: red;
+}
+
+#box_shop1>div {
+	position: relative;
+}
+
+#box_shop1>div> s {
+	font-size: 0.5rem;
+	color: #666;
+	margin-left: 5px;
+}
+
+.activeimg {
+	display: block;
+	position: absolute;
+	right: 5%;
+	bottom: 0;
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(../img/homeimg/iconxin.png) no-repeat;
+	background-size: 100%;
+}
+
+.activeimg2 {
+	background: url(../img/homeimg/xinaitive.png) no-repeat;
+	background-size: 100%;
+}
+
+.box_shop .item {
+	display: block;
+	float: left;
+	padding: 0;
+	margin-top: 10px;
+	border-color: #eee;
+	border-radius: 5px;
+	width: 50%;
+}
+
+
+/*.has-tabs, .bar-footer.has-tabs {
+    bottom: 10px;
+    z-index: 10000;
+}*/
+
+.tabs-item-hide> .tabs,
+.tabs.tabs-item-hide {
+	display: none !important;
+}

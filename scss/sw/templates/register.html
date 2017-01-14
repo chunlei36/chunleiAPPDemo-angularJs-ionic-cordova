@@ -1,0 +1,39 @@
+<ion-view class="login" hide-tabs>
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
+	<ion-content>
+		<div class="login-title">
+			<p><img src="img/loginImages/appLogo.png" /></p>
+			<i></i>
+		</div>
+			<div class="list">
+				<div class="item-input-inset">
+					<label class="item-input-wrapper">  
+                			<input id="uname" class="text" type="text" placeholder="用户名" required>
+           			</label>
+           			
+				</div>
+				<div class="warn">
+					<span ng-show="warn">用户名输入有误</span>
+           			<span ng-show="repeat">用户名已存在</span>
+           		</div>
+				<div class="item-input-inset">
+					<label class="item-input-wrapper">  
+                			<input  class="psd" id="password" type="password" placeholder="密码">  
+             		</label>
+				</div>
+				<div class="warn">
+           			<span ng-show="pwd1">密码不能为空</span>
+           		</div>
+				<div class="item-input-inset">
+					<label class="item-input-wrapper">  
+               			<input id="pwd" class="text" type="password"placeholder="再次输入密码">  
+            			</label>
+				</div>
+				<div class="warn">
+           			<span ng-show="pwd2">两次密码不一致</span>
+           		</div>
+			</div>
+		<button class="submit" ng-click="reg()">注册</button>
+		<a class="submit login-reg" href="#/tab/login">已有账号？请登录</a>
+	</ion-content>
+</ion-view>

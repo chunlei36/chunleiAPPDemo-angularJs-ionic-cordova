@@ -1,0 +1,20 @@
+<ion-view view-title="个人资料">
+	<link rel="stylesheet" type="text/css" href="css/personCss/setCss/setcom.css"/>
+	<link rel="stylesheet" type="text/css" href="css/personCss/setCss/means.css"/>
+	<ion-header-bar align-title="left" class="bar-positive">
+		<a href="#/tab/set"><i class="ion-ios-arrow-left"></i></a>
+		<h1 class="title">个人资料</h1>
+		<i class="ion-ios-more-outline"></i>
+	</ion-header-bar>
+	<ion-content>
+	<ion-list id="meansList">
+	     	<ion-item class="item-remove-animate item-avatar item-icon-right" 
+	      	ng-repeat="means in meanss" type="item-text-wrap" 
+	      	href="#/tab/{{means.id}}">
+	        <h2>{{means.name}}</h2>
+	        
+	        <i class="icon ion-chevron-right icon-accessory"></i>
+	      </ion-item>
+	    </ion-list>
+	</ion-content>
+</ion-view>

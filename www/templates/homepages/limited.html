@@ -1,0 +1,140 @@
+<ion-view view-title="我的" hide-tabs="true">
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/limited.css" />
+	<div class="header1">
+
+		<a href="#/tab/home" class="returnpages2"><i class="ion-ios-arrow-left"></i></a>
+		<span>限时精选</span>
+	</div>
+	<ion-content>
+				<ion-refresher refreshing-icon="ion-android-checkmark-circle" pulling-icon="ion-load-a" pulling-text="刷新中" refreshing-text="刷新成功" on-refresh="doRefresh()"></ion-refresher>
+
+		<div id="main">
+
+			<!--正文-->
+			<div id="price">
+				<a id="low" class="on">价格最低</a>
+				<a id="high">价格最高</a>
+
+			</div>
+			<div class="content">
+				<!--价格最低-->
+				<div id="list">
+					<!--第一个-->
+					<a class="detail clearfloat" href="#/tab/homedetail/fl19">
+						<div class="left">
+							<img src="img/limitedImages/2.png" alt="" />
+						</div>
+						<div class="right">
+							<h2>蚝王品味海鲜精品馆双人餐</h2>
+							<p>168元/2位<span>￥210</span></p>
+						</div>
+					</a>
+					<a class="detail clearfloat" href="#/tab/homedetail/fl20">
+						<div class="left">
+							<img src="img/limitedImages/5.png" alt="" />
+						</div>
+						<div class="right">
+							<h2>ALESSIBIO 猪肉盛宴自助</h2>
+							<p>120元/位<span>￥160</span></p>
+						</div>
+					</a>
+					<!--第二个列表内容-->
+					<a class="detail clearfloat" href="#/tab/homedetail/fl21">
+						<div class="left">
+							<img src="img/limitedImages/1.png" alt="" />
+						</div>
+						<div class="right">
+							<h2>Hola Tapas 餐厅双人餐</h2>
+							<p>255元/2位<span>￥280</span></p>
+						</div>
+					</a>
+					<!--第三个-->
+					<a class="detail clearfloat" href="#/tab/homedetail/fl22">
+						<div class="left">
+							<img src="img/limitedImages/4.png" alt="" />
+						</div>
+						<div class="right">
+							<h2>Olle 芝士肋排锅双人餐</h2>
+							<p>278元/2位<span>￥396</span></p>
+						</div>
+					</a>
+					<!--第四个-->
+					<a class="detail clearfloat" href="#/tab/homedetail/fl23">
+						<div class="left">
+							<img src="img/limitedImages/3.png" alt="" />
+						</div>
+						<div class="right">
+							<h2>赤道料理单人午/晚自助餐</h2>
+							<p>150元/位<span>￥180</span></p>
+						</div>
+					</a>
+				</div>
+				<!--价格最高-->
+				<div id="list2" style="display: none;">
+					<!--第一个-->
+					<a class="detail clearfloat" href="#/tab/homedetail/fl23">
+						<div class="left">
+							<img src="img/limitedImages/3.png" alt="" />
+						</div>
+						<div class="right">
+							<h2>赤道料理单人午/晚自助餐</h2>
+							<p>150元/位<span>￥180</span></p>
+						</div>
+					</a>
+
+					<!--第二个列表内容-->
+					<a class="detail clearfloat" href="#/tab/homedetail/fl21">
+						<div class="left">
+							<img src="img/limitedImages/1.png" alt="" />
+						</div>
+						<div class="right">
+							<h2>Hola Tapas 餐厅双人餐</h2>
+							<p>255元/2位<span>￥280</span></p>
+						</div>
+					</a>
+					<!--第三个-->
+					<a class="detail clearfloat" href="#/tab/homedetail/fl20">
+						<div class="left">
+							<img src="img/limitedImages/5.png" alt="" />
+						</div>
+						<div class="right">
+							<h2>ALESSIBIO 猪肉盛宴自助</h2>
+							<p>120元/位<span>￥160</span></p>
+						</div>
+					</a>
+					<!--第四个-->
+					<a class="detail clearfloat" href="#/tab/homedetail/fl22">
+						<div class="left">
+							<img src="img/limitedImages/4.png" alt="" />
+						</div>
+						<div class="right">
+							<h2>Olle 芝士肋排锅双人餐</h2>
+							<p>278元/2位<span>￥396</span></p>
+						</div>
+					</a>
+					<!--第五个-->
+					<a class="detail clearfloat" href="#/tab/homedetail/fl19">
+						<div class="left">
+							<img src="img/limitedImages/2.png" alt="" />
+						</div>
+						<div class="right">
+							<h2>蚝王品味海鲜精品馆双人餐</h2>
+							<p>168元/2位<span>￥210</span></p>
+						</div>
+					</a>
+
+				</div>
+			</div>
+		</div>
+		<div class="footer2">
+
+			<img src="img/detailimg/iconsp.png" alt="" />
+
+		</div>
+
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/limited.js" type="text/javascript" charset="utf-8"></script>
+
+	</ion-content>
+</ion-view>

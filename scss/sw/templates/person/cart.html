@@ -1,0 +1,28 @@
+<ion-view view-title="购物车" hide-tabs>
+	<link rel="stylesheet" type="text/css" href="css/personCss/personcom.css" />
+	<link rel="stylesheet" type="text/css" href="css/personCss/cart.css" />
+	<ion-header-bar align-title="left" class="bar-positive" id="ordersh">
+		<a href="#/tab/person"><i class="ion-ios-arrow-left"></i></a>
+		<h1 class="title">购物车</h1>
+		<i class="ion-ios-search"></i>
+		<i class="ion-ios-more-outline"></i>
+	</ion-header-bar>
+	<ion-content>
+		<ion-list id="cartList">
+			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="cart in carts" type="item-text-wrap">
+				<ion-checkbox ng-model="isChecked"></ion-checkbox>
+				<img ng-src="{{cart.simg}}">
+				<h2>{{cart.product}}</h2>
+				<p>{{cart.id}}</p>
+				<i>{{cart.price}}</i>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+	<ion-footer-bar align-title="center" class="bar-assertive" id="cartf">
+		<ion-checkbox ng-model="isChecked">全选</ion-checkbox>
+		<h2><span>合计：</span><span>￥0</span><p>不含运费</p></h2>
+		
+		<h1 ng-click="settle()">结算</h1>
+
+	</ion-footer-bar>
+</ion-view>

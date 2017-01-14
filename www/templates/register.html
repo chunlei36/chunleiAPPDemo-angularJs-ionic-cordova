@@ -1,0 +1,38 @@
+<ion-view view-title="登录" hide-tabs="true" class="bgi">
+	<link rel="stylesheet" type="text/css" href="css/register.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	
+	<ion-content class="padding">
+		<div id="return_two">
+			<a href="#/tab/me"><img src="img/loginImages/login_8.png" /></a>
+		</div>
+		<div id="logo"><img src="img/loginImages/login_2.png" alt="" /></div>
+		<div id="register">
+			<div id="entry">
+				<input type="text" placeholder="请填写手机号" required id="reg_user" />
+				<span class="invalid num_length">手机号为11位喔</span>
+				<span class="invalid existent">账户已经存在</span>
+				<br />
+				<input type="password" placeholder="请输入不小于六位的密码" id="pwd_us1" />
+				<span class="invalid pwd_us1">为了您的账户安全,请输入尽量安全的密码</span>
+				<br />
+				<input type="password" placeholder="请确认密码" id="pwd_us2" />
+				<span class="invalid pwd_us2">呀!两次密码好像不一样?</span>
+			</div>
+			<div id="login_two2">
+				<a href="" ng-click="register()">注册</a>
+			</div>
+			<div id="login_one">
+				<p>已有账户?<span><a href="#/tab/login">点击登录</a></span></p>
+			</div>
+		</div>
+		<div id="success">
+			<p id="success_one">恭喜您,注册成功！</p>
+			<div id="login_three">
+				<a ng-click="islog()">点击登录</a>
+			</div>
+		</div>
+	</ion-content>
+	<!--<script src="js/register.js" type="text/javascript" charset="utf-8"></script>-->
+	
+</ion-view>

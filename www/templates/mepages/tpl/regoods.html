@@ -1,0 +1,92 @@
+<ion-view hide-tabs="true">
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	
+	<style type="text/css">
+		#set_back{
+			color: white;			
+			font-size: 1.3rem;
+			line-height: 2rem;	
+		}
+		.goods_box{
+			margin-top: 2.5rem;
+		}
+		.list3{
+			width: 95%;
+			margin: 0 auto;
+		}
+		.list3 textarea{
+			height: 8rem;
+		}
+		.li1 li,.li2 li{
+			float: left;
+			color: #444;
+			font-size: 1rem;
+		}
+		.th_border{
+			border: none;
+			border-bottom: 1px solid #DDDDDD;
+		}
+		.goods_box .li1{
+			line-height: 3rem;
+			border-bottom: 1px solid #DDDDDD;
+		}
+		.goods_box .li2{
+			line-height: 3rem;
+			border-bottom: 1px solid #DDDDDD;
+			margin-bottom: 1.5rem;
+		}
+		.button{
+			width: 80%;
+			margin: 10% 0 0 10%;
+		}
+		#list_top{
+			margin-top: 1.4rem;
+		}
+	</style>
+
+	
+		<div class="header2">
+
+	<a href="#/tab/refund" class="returnpages3"><i class="ion-ios-arrow-left"></i></a>
+	<span>申请退货</span>
+</div>
+	
+	
+	
+	
+
+	<ion-content class="goods_box">
+		<ul class="list3 clearfloat li1" id="list_top">
+			<li>&nbsp;&nbsp;&nbsp;申请服务：</li>
+			<li>退货退款</li>
+		</ul>
+		<div class="list3">
+			<label class="item item-input item-select th_border">
+			    <div class="input-label">
+			      退货原因：
+			    </div>
+		    <select>
+		      <option>价格太贵</option>
+		      <option selected>送餐太慢</option>
+		      <option>服务态度不好</option>
+		    </select>
+		 </label>
+		</div>
+		<ul class="list3 clearfloat li2">
+			<li>&nbsp;&nbsp;&nbsp;退款金额：</li>
+			<li>￥<span style="color:red">500</span></li>
+		</ul>
+		<div class="list3">
+			<div>
+				<p style="color:#444;font-size: 1rem;">&nbsp;&nbsp;&nbsp;退货说明：</p>
+				<label class="item item-input">
+			   		 <textarea placeholder="请输入留言，最多200字"></textarea>
+				</label>		
+			</div>
+			<button class="button button-stable" ng-click="tktj()">
+ 				提交
+			</button>
+		</div>
+	</ion-content>
+
+</ion-view>

@@ -1,0 +1,24 @@
+<ion-view class="login" hide-tabs>
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
+
+	<ion-content>
+		<div class="login-title">
+			<p><img src="img/loginImages/appLogo.png" /></p>
+			<i></i>
+		</div>
+			<div class="list">
+				<div class="item-input-inset">
+					<label class="item-input-wrapper">  
+               			 <input id="username" class="text" type="text"placeholder="Username">  
+           			</label>
+				</div>
+				<div class="item-input-inset">
+					<label class="item-input-wrapper">  
+                			<input  class="psd" id="password" type="password" placeholder="Password">  
+             		</label>
+				</div>
+			</div>
+		<button class="submit" ng-click="login()">登陆</button>
+		<a class="submit login-reg" href="#/tab/register">注册</a>
+	</ion-content>
+</ion-view>

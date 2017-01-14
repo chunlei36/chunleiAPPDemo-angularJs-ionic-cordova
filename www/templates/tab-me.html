@@ -1,0 +1,210 @@
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<style type="text/css">
+	.m_header {
+		width: 100%;
+		height: 14rem;
+		background: url(img/meImages/1.jpg) no-repeat;
+		background-size: cover;
+	}
+	
+	.m_header>div {
+		width: 90%;
+		height: 10rem;
+		background: url(img/meImages/m_2.png) no-repeat;
+		margin: 0 auto;
+		position: relative;
+		top: 4rem;
+	}
+	
+	.m_header>div>div {
+		position: relative;
+		text-align: center;
+	}
+	
+	.m_header img {
+		width: 6rem;
+		height: 6rem;
+	}
+	
+	.m_article {
+		width: 90%;
+		margin: 2rem auto;
+		position: relative;
+		top: 4rem;
+		margin-top: 0;
+	}
+	
+	.m_article div {
+		float: left;
+		width: 47%;
+		border: 1px solid #eee;
+		text-align: center;
+		line-height: 3rem;
+		font-size: 1rem;
+		border-radius: 5px;
+		box-shadow: 1px 1px 3px #eee;
+	}
+	
+	.m_article div:active {
+		background-color: #eee;
+	}
+	
+	.m_article div:first-child {
+		margin-right: 5%;
+	}
+	
+	.m_article a {
+		width: 100%;
+		height: 100%;
+		display: block;
+		color: #515151;
+	}
+	
+	.me_top {
+		position: relative;
+		top: 2rem;
+	}
+	
+	#me_order {
+		border-top: none;
+	}
+	
+	.me_all div {
+		float: left;
+		width: 25%;
+		text-align: center;
+	}
+	
+	.me_all li:first-child {
+		margin-top: 0.5rem;
+	}
+	
+	.me_all div img {
+		width: 2rem;
+		height: 2rem;
+	}
+	
+	.me_top .item {
+		border-color: #eee;
+	}
+	
+	.chlses {
+		margin-top: 5px;
+	}
+	
+	#user_avar {
+		display: none;
+	}
+	
+	#user_login {}
+	
+	#user_login>img {
+		width: 4rem;
+		height: 4rem;
+		display: block;
+		margin: 0 auto;
+	}
+	
+	.m_header #user_login>a {
+		text-align: center;
+		color: #fe9999;
+		line-height: 4rem;
+		font-weight: bold;
+	}
+	
+	#out_aaa {
+		position: absolute;
+		top: 7rem;
+		width: 100%;
+	}
+</style>
+<ion-content>
+	<div class="m_header">
+		<div id="out_aaa">
+			<div id="user_avar">
+				<img ng-src="img/meImages/3.png" />
+				<p style="font-size: 1rem;line-height: 1.4rem;">天下第一吃</p>
+			</div>
+			<div id="user_login">
+				<img ng-src="img/avatar1.png" />
+
+				<a href="#/tab/login" style="font-size: 1.4rem;">登录/注册</a>
+
+			</div>
+		</div>
+
+	</div>
+	<div class="m_article clearfloat">
+		<div>
+			<a ng-click="setuser01()">美味券</a>
+		</div>
+		<div>
+			<a ng-click="setuser02()">我的收藏</a>
+		</div>
+	</div>
+
+	<div class="list me_top">
+
+		<a class="item item-icon-right  chlses" ng-click="setuser03()" id="me_order">
+			我的订单
+			<span class="item-note">全部订单</span>
+			<i class="icon ion-chevron-right icon-accessory"></i>
+		</a>
+		<div class="me_all clearfloat">
+			<div>
+				<ul>
+					<li>
+						<a ng-click="setuser04()"><img src="img/meImages/5.png" alt="" /></a>
+					</li>
+					<li>
+						<a ng-click="setuser04()">待付款</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>
+						<a ng-click="setuser05()"><img src="img/meImages/7.png" alt="" /></a>
+					</li>
+					<li>
+						<a ng-click="setuser05()">待收货</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>
+						<a ng-click="setuser06()"><img src="img/meImages/4.png" alt="" /></a>
+					</li>
+					<li>
+						<a ng-click="setuser06()">待评价</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li>
+						<a ng-click="setuser07()"><img src="img/meImages/6.png" alt="" /></a>
+					</li>
+					<li>
+						<a ng-click="setuser07()">退款</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<a class="item item-icon-right" ng-click="setuser2()">
+			设置
+			<i class="icon ion-chevron-right icon-accessory"></i>
+		</a>
+		<a class="item item-icon-right" href="#/tab/protocal">
+			用户协议
+			<i class="icon ion-chevron-right icon-accessory"></i>
+		</a>
+		<a class="item item-icon-right" ng-click="showPopup()">
+			联系我们
+			<i class="icon ion-chevron-right icon-accessory"></i>
+		</a>
+	</div>
+
+</ion-content>

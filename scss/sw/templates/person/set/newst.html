@@ -1,0 +1,15 @@
+<ion-view view-title="新消息通知">
+	<link rel="stylesheet" type="text/css" href="css/personCss/setCss/setcom.css" />
+	<link rel="stylesheet" type="text/css" href="css/personCss/setCss/newst.css" />
+	<ion-header-bar align-title="left" class="bar-positive">
+		<a href="#/tab/set"><i class="ion-ios-arrow-left"></i></a>
+		<h1 class="title">新消息通知</h1>
+	</ion-header-bar>
+	<ion-content>
+		<ion-list id="newstList">
+			<ion-toggle class="item-remove-animate item-avatar item-icon-right" ng-model="settings.enableFriends" ng-repeat="newst in newsts" type="item-text-wrap">
+
+				<h2>{{newst.name}}</h2>
+			</ion-toggle>
+		</ion-list>
+</ion-view>

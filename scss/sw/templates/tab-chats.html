@@ -1,0 +1,45 @@
+<ion-view view-title="分类" scrollbar-y="false">
+	<link rel="stylesheet" type="text/css" href="css/chats.css" />
+	<ion-header-bar style="height: 4rem;">
+		<ion-scroll id="scrollleft" direction="'x'" scrollbar-x="false" ng-swipe-left="next()" ng-swipe-right="last()">
+			<a ng-click="change()" class="fg">全部</a>
+			<a ng-click="change('book')">图书音像</a>
+			<a ng-click="change('phone')">电脑数码</a>
+			<a ng-click="change('learn')">学习用具</a>
+			<a ng-click="change('sport')">运动户外</a>
+			<a ng-click="change('hostel')">宿舍神器</a>
+			<a ng-click="change('play')">玩模乐器</a>
+			<a ng-click="change('dress')">服饰鞋包</a>
+			<a ng-click="change('makeup')">个性化护</a>
+		</ion-scroll>
+	</ion-header-bar>
+
+	<ion-content>
+		
+		<div class="art clearfix">
+			<div ng-repeat="s in items">
+				<div class="lists" title="{{s.info8}}" id="{{s.id}}">
+					<div class="imgs"  ng-click="toDetail('{{s.id}}')">
+						<img src="img/indexImages/{{s.info1}}" />
+					</div>
+					<div id="content">
+						<p ng-click="toDetail('{{s.id}}')">
+							<a href="">
+								<label for="">{{s.info2}}</label>
+							</a>
+						</p>
+						<p>
+							<span class="pm">{{s.info6}}</span>
+						</p>
+						<p class="clearfix">
+							<span class="pm">
+								¥{{s.info7}}
+							</span>
+							<a ng-click="aa(s.id)" class="{{s.id}} like ion-heart"></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

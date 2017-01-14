@@ -1,0 +1,30 @@
+#setList .list {
+	margin-top: 2rem;
+}
+
+#setList .item-avatar {
+	height: 8rem;
+}
+
+#setList a{
+	margin-top:0.5rem ;
+	padding: 1.2rem 4.9rem 1.6rem 4rem !important ;
+	position: relative;
+}
+#setList h2{
+	font-size: 1rem;
+}
+#setList .item-avatar{
+	height: 3rem;
+}
+#setList i{
+	top:-0.5rem
+}
+#setList #i1{
+	font-size: 1.8rem;
+	position: absolute;
+	margin-bottom: 5rem;
+	top: 1rem;
+	left: 1rem;
+	color: #999999;
+}

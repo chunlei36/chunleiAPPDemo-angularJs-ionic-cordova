@@ -1,0 +1,153 @@
+<ion-view hide-tabs="true">
+	<link rel="stylesheet" href="common.css" />
+	<style type="text/css">
+	
+		.returnpages3 .ion-ios-arrow-left {
+			color: #fff;
+			font-size: 2.7rem;
+			height: 50px;
+			line-height: 50px;
+			margin-left: 15px;
+		}
+		
+		.header2 {
+			height: 50px;
+			background-color: #000;
+			width: 100%;
+			position: relative;
+			z-index: 100;
+		}
+		
+		.header2>* {
+			float: left;
+		}
+		
+		.header2>span {
+			display: block;
+			width: 140px;
+			color: #fff;
+			font-size: 1.4rem;
+			line-height: 50px;
+			position: absolute;
+			left: 50%;
+			margin-left: -50px;
+		}
+		
+		#alltop {
+			width: 100%;
+			height: 50px;
+		}
+		/*正文*/
+		
+		#ar {
+			background: #e6e6e6;
+		}
+		
+		article {
+			margin-top: 4rem;
+			overflow-y: auto;
+		}
+		
+		article div {
+			margin: 0 auto;
+		}
+		
+		.att,
+		.text {
+			float: left;
+		}
+		
+		.att {
+			width: 3rem;
+			height: 3rem;
+			background: #fff;
+			margin: 0 1rem;
+		}
+		
+		.att img {
+			max-height: 3rem;
+			max-width: 3rem;
+			width: 100%;
+		}
+		
+		.text {
+			padding: 0.5rem;
+			max-width: 70%;
+			background: #fff;
+			font-size: 1rem;
+			border-radius: 0.5rem;
+			word-break: break-all;
+		}
+		#bt input {
+			width: 60%;
+			border-radius: 0.5rem;
+			border: none;
+			outline: none;
+			padding-left: 1rem;
+			font-size: 1rem;
+			display: inline-block;
+		}
+		
+		.bt_out #btn {
+			width: 20%;
+			margin-left: 0.3rem;
+			background: #bc0404;
+			color: #fff;
+			border-radius: 0.2rem;
+			border: none;
+			outline: none;
+			font-size: 1rem;
+			font-weight: bold;
+		}
+		
+		
+		.bb div {
+			float: right;
+			margin-top: 2rem;
+		}
+		
+		.text span {
+			line-height: 1.6rem;
+			color: #666;
+			font-size: 0.6rem
+		}
+		
+		
+		
+		.bt_out #bt {
+			width: 100%;
+			background: #000;
+			justify-content: space-between;
+		}
+	</style>
+	<div class="header2">
+		<a href="#/tab/me" class="returnpages3"><i class="ion-ios-arrow-left"></i></a>
+		<span>{{news.uname}}</span>
+	</div>
+
+	<ion-content id="ar">
+		<article>
+			<div class="clearfloat aa">
+				<div class="att">
+					<img src="{{news.simg}}" />
+				</div>
+				<div class="text">
+					{{news.news}}<br />
+					<span>{{news.time}}</span>
+				</div>
+
+			</div>
+		</article>
+
+	</ion-content>
+
+	<div class="bt_out">
+
+		<ion-footer-bar id="bt">
+			<span></span>
+			<input type="text" id="wen" placeholder="有问题就问我吧" />
+			<button id="btn" ng-click="sendMsg()">发送</button>
+		</ion-footer-bar>
+
+	</div>
+</ion-view>

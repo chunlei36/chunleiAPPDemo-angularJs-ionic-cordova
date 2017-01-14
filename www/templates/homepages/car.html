@@ -1,0 +1,43 @@
+<ion-view view-title="我的" hide-tabs="true">
+	<link rel="stylesheet" type="text/css" href="css/pjall.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/car.css" />
+	
+	<div class="header1">
+
+		<a ng-click="latepages()" class="returnpages2"><i class="ion-ios-arrow-left"></i></a>
+		<span>购物车</span>
+	</div>
+	<ion-content>
+
+		</div>
+
+		<!--第一份商品-->
+		<div class="all_box clearfloat">
+			<div>
+				<div><img ng-src="{{paygoods2.img}}" /></div>
+				<div>
+					<ul>
+						<li class="all_number">{{paygoods2.h2}}
+							
+						</li>
+						<li>类型：单人自助午餐</li>
+						<li>下单时间：2016-10-5 11：24</li>
+						<br />
+						<li class="all_number1">{{paygoods2.span}}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="all_section1">
+			<ul>
+				<li><span>数量:1</span><span>&nbsp;&nbsp;&nbsp;实付：<i>￥{{span2}}</i></span></li>
+				<li><a class="button button-assertive button-large" href="#/tab/shopqg/{{paygoods2.pid1}}">付款</a></li>
+			</ul>
+		</div>
+	
+
+	</ion-content>
+
+	
+</ion-view>

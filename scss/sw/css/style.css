@@ -1,0 +1,46 @@
+/*通用样式*/
+
+* {
+	font-size: 62.50%;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+/*清除浮动*/
+
+.clearfloat:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.tab-item.tab-item-active,
+.tab-item.active,
+.tab-item.activated {
+	color: #fd6363;
+}
+
+
+/************/

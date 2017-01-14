@@ -1,0 +1,156 @@
+
+/*底部导航*/
+
+.btna1 {
+	width: 40%;
+	height: 100%;
+	font-size: 1.2rem;
+	color: #fff;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	line-height: 44px;
+}
+
+.aggcar {
+	background-color: #000;
+}
+
+.aggcar:active {
+	background-color: #3f3e3e;
+}
+
+.qgshop {
+	background-color: #d6222b;
+}
+
+.qgshop:active {
+	background-color: #fe2f2f;
+}
+
+.car {
+	width: 20%;
+}
+
+.car:active {
+	background-color: #ffd0d0;
+}
+
+.car img {
+	width: 2rem;
+	display: block;
+	margin: 7.5px auto;
+}
+
+.carbottom .tabs {
+	border: none;
+	background-image: none !important;
+	padding: 0;
+	border-top: 1px solid #ddd !important;
+}
+.bar-footer{
+	padding: 0;
+}
+/*头部*/
+.returnpages2 .ion-ios-arrow-left {
+	color: #fff;
+	font-size: 2.7rem;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 15px;
+}
+.header1{
+	height: 50px;
+	background-color: #000;
+	width: 100%;
+	position: relative;
+	z-index: 100;
+}
+.header1>*{
+	float: left;
+	
+}
+.header1>span{
+	display: block;
+	color: #fff;
+	font-size: 1.4rem;
+	margin-left: 30px;
+	line-height: 50px;
+	
+}
+.allpj2{
+	width: 2.4rem;
+	height: 1.2rem;
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+	text-align: center;
+	border-radius: 5px;
+	color: #eee;
+	background-color:  #444;
+	margin: 0.5rem 0 0.5rem 1rem;
+	margin-top: 4rem;
+}
+/*评价*/
+.pjall1{
+	padding: 10px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+.pjall1 .detail7_1 {
+	padding-left: 1rem;
+}
+
+.pjall1  .detail7_1>* {
+	float: left;
+}
+
+.pjall1  .detail7_1>img {
+	display: block;
+	width: 3rem;
+	height: 3rem;
+}
+
+ .pjall1 .detail7_1>div.detail7_1_1 {
+	height: 3rem;
+	margin-left: 10px;
+}
+
+.pjall1 .detail7_1>div.detail7_1_1>h3 {
+	font-size: 1rem;
+	font-weight: 100;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.pjall1 .detail7_1>div.detail7_1_1>span {
+	font-size: 0.8rem;
+	font-weight: 100;
+	color: #666;
+}
+
+.pjall1 .detail7_1>div.detail7_1_2>h2 {
+	font-size: 1rem;
+	font-weight: 100;
+	margin-top: 7px;
+	margin-bottom: 5px;
+}
+
+.pjall1 .detail7_1>div.detail7_1_2>span {
+	font-size: 0.8rem;
+	color: #999999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

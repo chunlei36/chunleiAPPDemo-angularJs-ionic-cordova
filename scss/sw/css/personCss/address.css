@@ -1,0 +1,91 @@
+#addressList .list {
+	margin-top: 2rem;
+}
+
+#addressList .item-avatar {
+	padding-left: 2rem!important;
+}
+
+#addressList h2 span:last-child {
+	float: right;
+}
+
+#addressList h2,
+#addressList p {
+	margin-top: 1rem;
+}
+
+#addressList .item-avatar div {
+	padding-top: 1rem;
+	border-top: 1px solid #ddd;
+}
+
+#addressList div span:last-child {
+	float: right;
+}
+
+#addressList div span:last-child i {
+	margin-left: 1rem;
+}
+
+#form-w {
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	background-color: rgba(28, 26, 27, 0.45);
+	padding-top: 7%;
+	padding-left: 15%;
+	width: 100%;
+	height: 100%;
+}
+
+#form-we {
+	width: 70%;
+	max-width: 100%;
+	max-height: 90%;
+	height: 35%;
+	margin-top: 25%;
+	margin-left: 6%;
+	border-radius: 0px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+#form-wee {
+	padding: 10px;
+	overflow: auto;
+}
+
+#form-we input {
+	width: 100%;
+	padding: 1rem;
+	border: 1px solid #B2B2B2;
+	margin-top: 1rem;
+}
+
+#form-inp {
+	margin: 0.2rem;
+}
+
+#baoc {
+	padding: 10px;
+	border-color: transparent;
+	background-color: #ef473a;
+	width: 50%;
+	/*margin-top: 1.5rem;*/
+	color: #fff;
+}
+
+#qux {
+	padding: 10px;
+	width: 48%;
+	background-color: white;
+	border-color: transparent;
+}
+.scroll{
+	width: 100%;
+	height: 100%;
+}
+
+.scroll-content{
+	height: 100%!important;
+}

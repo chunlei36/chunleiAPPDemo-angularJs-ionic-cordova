@@ -1,0 +1,28 @@
+<ion-view view-title="{{account.uname}}">
+	<link rel="stylesheet" type="text/css" href="css/accountCss/accountcom.css" />
+	<link rel="stylesheet" type="text/css" href="css/accountCss/notify.css" />
+	<ion-header-bar align-title="left" class="bar-positive">
+		<a href="#/tab/account"><i class="ion-ios-arrow-left"></i></a>
+		<h1 class="title">{{account.uname}}</h1>
+	</ion-header-bar>
+	<ion-content>
+		<ion-list id="notifyList1">
+			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="notify in notifys" type="item-text-wrap">
+				<p>{{notify.time}}</p>
+				<h2>{{notify.uname}}<i>{{notify.news}}</i></h2>
+				<img src="{{notify.simg}}" />
+				<span>
+					<h3>{{notify.id}}</h3>
+					<p>{{notify.num}}</p>
+				</span>
+			</ion-item>
+		</ion-list>
+				<ion-list id="notifyList2">
+			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="notify1 in notifys1" type="item-text-wrap">
+				<p>{{notify1.time}}</p>
+				<h2>{{notify1.uname}}</h2>
+				<p>{{notify1.news}}</p>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

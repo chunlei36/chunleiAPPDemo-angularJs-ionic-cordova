@@ -1,0 +1,31 @@
+<ion-view view-title="消息" id="tabAccount">
+	<link rel="stylesheet" type="text/css" href="css/account.css"/>
+	<ion-header-bar align-title="center" class="bar-positive">
+		<h1 class="title">消息</h1>
+	</ion-header-bar>
+
+	<ion-content>
+		<ion-list id="accoutList1">
+			<ion-item class="item-remove-animate item-avatar item-icon-right" 
+				ng-repeat="account in accounts" type="item-text-wrap" 
+				href="#/tab/notify" ng-click="showDetail(account)">
+				<img class="avat" ng-src="{{account.simg}}">
+				<h2>{{account.uname}}</h2>
+				<p>{{account.news}}</p>
+				<p>{{account.time}}</p>
+			</ion-item>
+		</ion-list>
+		<ion-list id="accoutList2">
+			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="account1 in account1s" type="item-text-wrap" href="#/tab/news/{{account1.id}}">
+				<img class="avat" ng-src="{{account1.simg}}">
+				<h2>{{account1.uname}}</h2>
+				<p>{{account1.news}}</p>
+				<p>{{account1.time}}</p>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+	<ion-footer-bar id="accountf">
+		<span><a class="button" id="bt1"><i class="ion-ios-email-outline"></i><p>通知</p></a></span>
+		<span><a class="button" id="bt2"><i class="ion-ios-chatbubble-outline"></i><p>消息</p></a></span>
+	</ion-footer-bar>
+</ion-view>

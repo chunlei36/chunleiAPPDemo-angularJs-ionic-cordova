@@ -1,0 +1,82 @@
+<ion-view view-title="附近美食">
+	<link rel="stylesheet" type="text/css" href="css/near.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<ion-header-bar>
+
+		<div class="nearfood1">
+			<h1>附近美食</h1>
+		</div>
+
+	</ion-header-bar>
+	<ion-content>
+		<div id="nearallpa" style="display: none;">
+			<ion-refresher refreshing-icon="ion-android-checkmark-circle" pulling-icon="ion-load-a" pulling-text="刷新中" refreshing-text="刷新成功" on-refresh="doRefresh()"></ion-refresher>
+			<nav id="nav_select" class="clearfloat">
+				<ul class="list clearfloat">
+					<li class="changeOne">
+						全部分类
+						<i class="icon ion-arrow-down-b"></i>
+						<ul>
+							<li ng-click="change()">全部分类</li>
+							<li ng-click="changeOne()">风味小吃</li>
+							<li ng-click="changeTwo()">时尚料理</li>
+							<li ng-click="changeThree()">创意中华</li>
+						</ul>
+					</li>
+					<li class="changeTwo">
+						3Km
+						<i class="icon ion-arrow-down-b"></i>
+						<ul>
+							<li ng-click="changeFour()">1Km</li>
+							<li ng-click="changeFive()">3Km</li>
+							<li ng-click="changeSix()">5Km</li>
+							<li ng-click="changeSeven()">7Km</li>
+						</ul>
+					</li>
+					<li class="changeThree">
+						筛选
+						<i class="icon ion-arrow-down-b"></i>
+						<ul>
+							<li ng-click="changeEight()">单人餐</li>
+							<li ng-click="changeNine()">双人餐</li>
+							<li ng-click="changeTen()">多人餐</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<article>
+				<section>
+
+					<div class="" id="places">
+						<a class="item item-icon-left  item-icon-right" href="">
+							<i class="icon ion-ios-location-outline"></i> 郑州市高新区科学大道100号
+							<i class="icon ion-chevron-right icon-accessory"></i>
+						</a>
+					</div>
+					<div id="content_list">
+						<ul class="list">
+							<li class="item" ng-repeat="msg in contents">
+								<a href="#/tab/homedetail/{{msg.pid1}}">
+									<img src="{{msg.img}}" />
+									<div>
+										<p>{{msg.h2}}</p>
+										<p>{{msg.p2}}</p>
+										<p>{{msg.p3}}</p>
+										<p><i class="icon ion-ios-location-outline"></i>{{msg.p4}}</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</article>
+			<div class="nearbottom">
+
+				<img src="img/detailimg/iconsp.png" alt="" />
+
+			</div>
+		</div>
+	</ion-content>
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/near.js" type="text/javascript" charset="utf-8"></script>
+</ion-view>

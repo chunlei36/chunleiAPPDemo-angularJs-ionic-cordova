@@ -1,0 +1,25 @@
+<ion-view view-title="登录" hide-tabs="true" class="bgi">
+	<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+  <ion-content class="padding">
+   		<div id="return"><a href="#/tab/me"><img src="img/loginImages/login_8.png"/></a></div>
+   		<div id="logo_one"><img src="img/loginImages/login_2.png" alt="" /></div>
+   		<div id="entry_one">
+   			<input type="text" placeholder="请输入手机号或用户名" id="uname" name="user"/>
+   			<span class="invalid BT">用户名必填喔!</span>
+			<span class="invalid no_existent">账户不存在,请确认</span>
+   			<br />
+   			<input type="password" placeholder="请输入密码" id="pwd"/>
+   			<span class="invalid pwd_error">密码或用户名错误,请确认</span>
+   		</div>
+   		<div id="login"><a href="" ng-click="login()">登录</a></div>
+   		<div id="login_two"><a href="#/tab/register">注册</a></div>
+   		<div id="other_login"><img src="img/loginImages/login_11.png" alt="" /></div>
+   		<div id="skip" class="clearfloat">
+   			<div><img src="img/loginImages/login_6.png" alt="" /></div>
+   			<div><img src="img/loginImages/login_7.png" alt="" /></div>
+   		</div>
+  </ion-content>
+
+  <!--<script src="js/login.js" type="text/javascript" charset="utf-8"></script>-->
+</ion-view>

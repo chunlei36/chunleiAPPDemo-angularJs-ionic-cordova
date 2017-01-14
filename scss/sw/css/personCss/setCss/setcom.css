@@ -1,0 +1,26 @@
+.bar.bar-positive {
+	background-color: #F1F2F3;
+	height: 4rem;
+	padding-top: 1rem;
+	background-image: none;
+}
+
+.bar.bar-positive .title {
+	margin-top: 0.6rem;
+	margin-left: 4rem;
+	left: 0!important;
+	color: #262626;
+}
+.bar.bar-positive a{
+	width: 3rem;
+}
+.bar.bar-positive i {
+	color: #262626;
+	font-size: 2rem;
+	margin-left: 1rem;
+	
+}
+
+.bar.bar-positive i:nth-child(3) {
+	margin-left: 17rem;
+}

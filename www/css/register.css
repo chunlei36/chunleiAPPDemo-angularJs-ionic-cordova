@@ -1,0 +1,112 @@
+.bgi{
+	background-image: url(../img/loginImages/login_1.jpg);
+	background-size: 100% 100%;
+}
+#return_two img{
+	width: 10px;
+}
+#logo{
+	width: 12rem;
+	margin: 2rem auto 5rem;
+}
+#logo img{
+	width: 12rem;
+}
+#entry input{
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	color: #959595;
+	background-color: rgba(0,0,0,0);
+	width: 98%;
+	height: 4rem;
+	border-bottom: 1px solid #959595;
+	padding-left: 2.4rem;
+}
+#entry input:nth-child(1){
+	background: url(../img/loginImages/login_3.png) no-repeat 10px center;
+	background-size: 1.2rem;
+}
+#entry input:nth-child(5){
+	background: url(../img/loginImages/login_4.png) no-repeat 10px center;
+	background-size: 1.2rem;
+}
+#entry input:nth-child(8){
+	background: url(../img/loginImages/login_4.png) no-repeat 10px center;
+	background-size: 1.2rem;
+}
+#entry span{
+	font-size: 1rem;
+	color: #f4562B;
+	display: none;
+}
+
+#login_two2{
+	width: 90%;
+	height: 3rem;
+	border:1px solid #a4562b;
+	border-radius: 2rem;
+	margin: 3.6rem auto 2rem;
+}
+#login_two2 a{
+	display: block;
+	width: 100%;
+	color: #F2F2F2;
+	font-size: 1.4rem;
+	text-align: center;
+	line-height: 3rem;
+}
+#other_login{
+	width: 86%;
+	margin: 0 auto;
+}
+#other_login img{
+	width: 100%;
+}
+#skip{
+	width: 60%;
+	margin: 2rem auto 0;
+}
+#skip>div{
+	float: left;
+	width: 39%;
+	margin-left:11%;
+}
+#skip>div img{
+	width: 3.6rem;
+}
+#login_one{
+	color: #EEEEEE;
+	text-align: right;
+}
+#login_one a{
+	font-size:1rem;
+	color: #a4562b;
+}
+
+
+#success{
+	margin: 3rem auto;
+	display: none;
+}
+#success_one{
+	text-align: center;
+	font-size: 1.6rem;
+	color: #A4562B;
+}
+#login_three{
+	width: 90%;
+	height: 3rem;
+	border:1px solid #a4562b;
+	border-radius: 2rem;
+	margin: 3.6rem auto 2rem;
+}
+#login_three a{
+	display: block;
+	width: 100%;
+	color: #F2F2F2;
+	font-size: 1.4rem;
+	text-align: center;
+	line-height: 3rem;
+}

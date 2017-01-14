@@ -1,0 +1,176 @@
+<ion-view hide-tabs="true">
+	<ion-content>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/homedetail.css" />
+
+		<a href="#/tab/near" class="returnpages1"><i class="ion-ios-arrow-left"></i></a>
+		<div class="navdetail">
+			
+			
+			
+			
+			<!-- start 轮播图-->
+			<ion-slide-box auto-play="true" show-pager="true" does-continue="true" slide-interval='2000' delegate-handle="slideimgs">
+				
+				
+				<ion-slide>
+					<div class="box banner"><img src="{{contents.url}}" alt="" /></div>
+				</ion-slide>
+				
+				
+				
+				<ion-slide>
+					<div class="box banner">
+						<img src="{{contents.url2}}" alt="" />
+					</div>
+				</ion-slide>
+				
+				
+				<ion-slide>
+					<div class="box banner">
+						<img src="{{contents.url3}}" alt="" />
+					</div>
+				</ion-slide>
+				
+				
+				
+				
+				
+			</ion-slide-box>
+			<!-- end 轮播图-->
+			
+			
+			
+			
+		</div>
+		<div class="detail1">
+			<div class="detail1_1 clearfloat">
+
+				<!--<h1>莲单/双人尊荣午市套餐</h1><span>已售1567</span>-->
+				<h1>{{contents.p1}}</h1><span>已售{{contents.yishop}}</span>
+
+			</div>
+			<div class="detail1_2">
+				<span>{{contents.price}}</span><s>{{contents.lateprice}}</s>
+
+				<div class="activeimg1" onclick="addxin(this)"></div>
+			</div>
+
+		</div>
+
+		<div class="detail2">
+			<img src="img/homeimg/icondw.png" alt="" />
+			<span>郑州市{{contents.p4}}...</span>
+			<a href=""><img src="img/homeimg/iconphone.png" /></a>
+
+		</div>
+		<div class="detail3">
+			<h1>套餐详情</h1>
+			<span>{{contents.tcxq}}</span>
+			<a href="#/tab/xqpage"><i class="ion-ios-arrow-right"></i></a>
+		</div>
+		<div class="detail4">
+			<h1>消费提示</h1>
+
+		</div>
+
+		<div class="detail5">
+			<h2>有效期</h2>
+			<span>2016年07月2日至2017年07月20日（周末法定节假日通用</span>
+			<h2>使用时间</h2>
+			<span>08:30-21:30</span>
+
+		</div>
+		<div class="detail6">
+			<h1>评价</h1>
+
+		</div>
+
+		<div class="detail7">
+			<div class="detail7_1 clearfloat">
+				<img src="img/detailimg/avaicon.png" alt="" />
+				<div class="detail7_1_1">
+					<h3>最爱草莓车厘子</h3>
+					<span>10-21</span>
+
+				</div>
+				<div class="detail7_1_2">
+					<h2>位置挺好找的，价格实惠，交通便利。</h2>
+					<span>消费评价 - 思诺牛排自助餐厅（黄浦店)</span>
+				</div>
+
+			</div>
+
+		</div>
+		<!--查看全部评价-->
+		<a href="#/tab/pjall" class="detail8">
+			<h1>查看全部评价</h1>
+
+			<span class="detail8_arr"><i class="ion-ios-arrow-right"></i></span>
+
+		</a>
+
+		<div class="section1">
+			<h1>今日推荐</h1>
+
+			<div class="box_shop clearfloat">
+				<ion-list>
+					<ion-item ng-repeat="goods in goods1">
+						<div id="box_shop1">
+							<a href="#/tab/homedetail/{{goods.pid1}}"><img src="{{goods.img}}" alt="" /></a>
+							<div>
+								<h2>{{goods.h2}}</h2>
+								<span>{{goods.span}}</span><s>{{goods.s}}</s>
+								<!--ng-click="sss()"-->
+
+							</div>
+
+						</div>
+					</ion-item>
+				</ion-list>
+
+			</div>
+		</div>
+
+		<div class="detail9">
+
+			<img src="img/detailimg/iconsp.png" alt="" />
+
+		</div>
+		<script type="text/javascript">
+			//	?????????
+			//	$('.activeimg').click(function () {
+			//		console.log(44444)
+			//	})
+
+			var addxinall = 0;
+
+			function addxin(a) {
+				addxinall++
+				if(addxinall % 2 == 0) {
+					$(a).addClass('activeimg2')
+
+				} else {
+					$(a).removeClass('activeimg2')
+
+				}
+
+			}
+		</script>
+	</ion-content>
+	<ion-footer-bar>
+
+		<a class="car" href="">
+
+			<img src="img/detailimg/shopcar.png" alt="" />
+		</a>
+		<a class="btna1 aggcar">
+			加入购物车
+		</a>
+		<a class="btna1 qgshop" href="#/tab/shopqg/{{contents.nearID}}">
+			立即抢购
+		</a>
+
+	</ion-footer-bar>
+
+</ion-view>

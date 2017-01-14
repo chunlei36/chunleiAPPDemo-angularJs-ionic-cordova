@@ -1,0 +1,149 @@
+/*头部*/
+
+.returnpages2 .ion-ios-arrow-left {
+	color: #fff;
+	font-size: 2.7rem;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 15px;
+}
+
+.header1 {
+	height: 50px;
+	background-color: #000;
+	width: 100%;
+	position: relative;
+	z-index: 100;
+}
+
+.header1>* {
+	float: left;
+}
+
+.header1>span {
+	display: block;
+	color: #fff;
+	font-size: 1.4rem;
+	margin-left: 30px;
+	line-height: 50px;
+}
+
+.footer_tj1 {
+	display: block;
+	height: 3rem;
+	color: #fff;
+	width: 80%;
+	background-color: #000;
+	font-size: 1.4rem;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 5px;
+	line-height: 3rem;
+	
+}
+
+.footer_tj1:active {
+	background-color: #444;
+}
+
+.footer_tj0 {
+	width: 100%;
+}
+
+
+/**/
+
+.articel22 {
+	width: 100%;
+	padding-top: 50px;
+	background-color: #f7f7f7;
+}
+
+.shoptjcss {
+	/*outline: 1px solid red;*/
+	margin-top: 1rem;
+	height: 6rem;
+	width: 100%;
+	background-color: #fff;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	position: relative;
+	box-shadow: 2px 2px 3px #ccc;
+}
+
+.shoptjcss_1 {
+	width: 3rem;
+	height: 3rem;
+	overflow: hidden;
+	border-radius: 50%;
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+}
+
+.shoptjcss_1>img {
+	height: 3rem;
+}
+
+.shoptjcss_2 {
+	position: absolute;
+	left: 5rem;
+	top: 1rem;
+}
+
+.shoptjcss_2>h2 {
+	color: #000000;
+	font-size: 1.8rem;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	border-style: dashed;
+}
+
+.shoptjcss_2 span {
+	color: #333333;
+	font-size: 1rem;
+	border-bottom: 1px solid #ccc;
+	border-style: dashed;
+}
+.shoptjcss2{
+	width: 100%;
+	height: 10.5rem;
+	background-color: #fff;
+	margin-top: 2rem;
+}
+
+.shoptjcss3 img{
+	width: 1.2rem;
+	float: left;
+}
+.shoptjcss3>div{
+	float: left;
+	margin-left: 3rem;
+}
+.shoptjcss3 h2{
+	margin-left: 0.2rem;
+	
+}
+.shoptjcss3 span{
+	font-size: 0.6rem;
+	color: #666;
+	
+}
+
+
+.shoptjcss3{
+	margin-top: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

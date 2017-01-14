@@ -1,0 +1,76 @@
+<ion-view hide-tabs="true">
+<link rel="stylesheet" type="text/css" href="css/indexCss/index01.css" />
+	<!--头部-->
+	<ion-header-bar id="header01" class="bar-header">
+		<a class="icon ion-ios-arrow-left" href="#/tab/dash"></a>
+		<span>1条评论</span>
+	</ion-header-bar>
+	<!--内容-->
+	<ion-content class="padding" id="content01" ng-controller="index01Ctrl" on-swipe-right="onSwipeRight()">
+		<h4><i>原创</i>超实用的旅行小物，帮你分分钟摆脱尴尬！</h4>
+		<p>Tom&nbsp;&nbsp;|&nbsp;&nbsp;九成新</p>
+		<p>每次出去旅行最激动的就是准备行李的阶段，早早列好清单，然后每天反复筛选，恨不得现在就回去打包。钱包护照包洗漱用品这些就不说了，谁都知道。但用心生活的人还会列一个随身物品清单，多花一点点心思准备，这些小物能让你的旅行变得更美好。</p>
+		<img src="img/indexImages/indexImg03.jpeg" alt="" />
+		<!--sellBox  01-->
+		<p>
+			吹气U型枕体验太好了！外皮绒绒超级舒服，突出的部分刚好托住头两侧，侧歪也不会累及颈椎，设计比普通U型枕好！出门旅行必备神器啊~~满意满意 吹嘴是双盖设计，第一层盖子打开吹气，吹完也不用迅速的盖盖子，气不会泄露，放气的时候把第二层盖子打开。很快就泄气了。刚买来不会用，直接把第二层盖子打开往里吹气，就需要很快地盖盖子。其实是很容易吹气的。总之我觉得设计堪称完美，性价比很高，比那些号称自动充气的强多了。
+		</p>
+		<img src="img/indexImages/indexImg031.jpeg" />
+		<a href="#/tab/detail/detail06" id="sellBox">
+			<img class="sellImg" src="img/indexImages/indexImg032.jpeg" />
+			<div>
+				<p>充气U型枕</p>
+				<p>九成新&nbsp;&nbsp;|&nbsp;<span></span>&nbsp;&nbsp;购买</p>
+			</div>
+		</a>
+		<!--sellBox  02-->
+		<p>太喜欢这套分装瓶了！为了带上飞机购买的，比拿玻璃瓶轻便许多，白透明色更显干净。绝对不是一次性的那种，可以重复使用很多次~\(≧▽≦)/~，瓶子都挺大的，适合去4天以上的出游，一收到就迫不及待的灌上了洗发水，贴上标签，唯一不足是喷雾瓶喷出的水珠略大了一些。还有，提醒宝宝们千万不要用热水烫=_=否则会变形哒/(ㄒoㄒ)/~~</p>
+		<img src="img/indexImages/indexImg033.jpeg" alt="" />
+		<a href="#/tab/detail/detail07" id="sellBox">
+			<img class="sellImg" src="img/indexImages/indexImg034.jpeg" />
+			<div>
+				<p>分装瓶混装八件套</p>
+				<p>九成新&nbsp;&nbsp;|&nbsp;<span></span>&nbsp;&nbsp;购买</p>
+			</div>
+		</a>
+		<!--评论-->
+		<div id="thumb" ng-click="addThumb()">
+			<i class="icon ion-thumbsup"></i>
+		</div>
+		<p class="center">{{thumb}}次赞</p>
+
+		<p id="commentTitle">评论
+			<span>(点击可以进行回复)</span>
+			<button ng-click="showPopup()">我来说两句</button>
+		</p>
+		<div id="comment" ng-click="show()">
+			<img src="img/indexImages/indexImg015.jpg" />
+			<div>
+				<p>
+					Scenery如懿
+				</p>
+				<p>
+					等我哪天有兴趣的时候整理出我的粉色套装出来。
+				</p>
+			</div>
+		</div>
+		<p id="answerOther">
+			<b></b>
+			<i>{{uname}}我 &nbsp; : &nbsp;{{answerContent}}</i>
+		</p>
+		<div id="answer">
+			<img src="{{user.img}}" />
+			<div>
+				<p>
+					{{user.uname}}
+				</p>
+				<p>
+					{{data.wifi}}
+				</p>
+			</div>
+
+		</div>
+
+	</ion-content>
+
+</ion-view>

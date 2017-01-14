@@ -1,0 +1,204 @@
+<ion-view hide-tabs="true">
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	
+	<style type="text/css">
+		.e_box {
+			width: 95%;
+			margin: 0 auto;
+			background: #f7f7f7;
+			margin-top: 4rem;
+		}
+		
+		.order_detail {
+			width: 95%;
+			margin: 0 auto;
+		}
+		
+		.order_detail>li {
+			float: left;
+			width: 23%;
+			line-height: 2.5rem;
+			text-align: center;
+		}
+		
+		.order_detail a {
+			font-size: 1rem;
+			color: black;
+		}
+		
+		.order_detail .order_s {
+			width: 15%;
+		}
+		
+		.bar-subheader {
+			background: white;
+		}
+		
+		.e_active a {
+			color: #e4652b;
+		}
+		/*详情开始*/
+		
+		.e_box>ul>li {
+			float: left;
+			color: #333;
+			line-height: 2.5rem;
+			font-size: 0.8rem;
+		}
+		
+		.e_box>.wait_detail>div {
+			float: left;
+		}
+		
+		.wait_dh {
+			background: #bfbfbf;
+			color: #f9f9f9;
+		}
+		
+		.wait_dh>span {
+			line-height: 2.5rem;
+			font-size: 1rem;
+		}
+		
+		.wait_span {
+			float: right;
+		}
+		
+		.e_box>.wait_detail img {
+			width: 8rem;
+			height: 6rem;
+		}
+		
+		.e_box>.wait_detail li {
+			color: #b5b5b5;
+			line-height: 2rem;
+			margin-left: 3rem;
+		}
+		
+		.e_box>.wait_detail li.wait_zt {
+			color: #333;
+			font-size: 1rem;
+		}
+		
+		.wait_button {
+			width: 80%;
+			margin: 0 auto;
+		}
+		
+		.wait_button>div {
+			float: left;
+			width: 46%;
+			border-radius: 5px;
+			line-height: 2.5rem;
+			background: #d52531;
+			text-align: center;
+			margin: 2rem auto;
+		}
+		
+		.wait_button>div:first-child {
+			margin-right: 5%;
+			background: #bfbfbf;
+		}
+		
+		.wait_button a {
+			color: white;
+			font-size: 1rem;
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		
+		.all_footer {
+			width: 70%;
+			margin: 0 auto;
+			text-align: center;
+		}
+		
+		.all_footer img {
+			width: 80%;
+			margin: 1.2rem auto;
+		}
+		
+		#wsh_time {
+			float: right;
+		}
+		
+		#set_back {
+			color: white;
+			font-size: 1.3rem;
+			line-height: 2rem;
+		}
+	</style>
+
+	<div class="header2">
+
+		<a href="#/tab/me" class="returnpages3"><i class="ion-ios-arrow-left"></i></a>
+		<span>我的订单</span>
+	</div>
+
+	<div class="bar bar-subheader">
+		<ul class="clearfloat order_detail">
+			<li class="order_s">
+				<a href="#/tab/all">全部</a>
+			</li>
+			<li>
+				<a href="#/tab/wait">待付款</a>
+			</li>
+			<li class="e_active">
+				<a href="#/tab/use">待收货</a>
+			</li>
+			<li>
+				<a href="#/tab/evaluate">待评价</a>
+			</li>
+			<li class="order_s">
+				<a href="#/tab/refund">退款</a>
+			</li>
+		</ul>
+	</div>
+	<ion-content>
+		<br />
+		<br />
+		<div class="e_box">
+			<div class="wait_dh clearfloat">
+				<span>&nbsp;&nbsp;单号:645566555131421</span>
+				<span class="wait_span">80元&nbsp;&nbsp;</span>
+			</div>
+			<ul class="clearfloat">
+				<li>&nbsp;&nbsp;到新乡市【河南科技学院东大门】</li>
+				<li id="wsh_time">2016-8-25&nbsp;&nbsp;11：27&nbsp;&nbsp;</li>
+			</ul>
+			<ul class="clearfloat">
+				<li>&nbsp;&nbsp;收货人：</li>
+				<li>张无忌</li>
+			</ul>
+			<ul class="clearfloat">
+				<li>&nbsp;&nbsp;联系方式：</li>
+				<li>15670596160</li>
+			</ul>
+			<ul class="clearfloat">
+				<li>&nbsp;&nbsp;收货地址：</li>
+				<li>河南省 新乡市 红旗区 河南科技学院</li>
+			</ul>
+			<div class="wait_detail clearfloat">
+				<div>&nbsp;&nbsp;<img src="img/meImages/3@3x.png" alt="" /></div>
+				<div>
+					<ul>
+						<li class="wait_zt">海鲜大餐</li>
+						<li>数量：1件</li>
+						<li>口味：清淡</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wait_button clearfloat">
+				<div>
+					<a href="#">申请退款</a>
+				</div>
+				<div>
+					<a href="#">确认收货</a>
+				</div>
+			</div>
+
+		</div>
+		<div class="all_footer"><img src="img/meImages/all_tm.png" alt="" /></div>
+	</ion-content>
+</ion-view>

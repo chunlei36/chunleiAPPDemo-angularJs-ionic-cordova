@@ -1,0 +1,38 @@
+<ion-view view-title="我的地址" hide-tabs>
+
+	<link rel="stylesheet" type="text/css" href="css/personCss/personcom.css" />
+	<link rel="stylesheet" type="text/css" href="css/personCss/address.css" />
+	<ion-header-bar align-title="left" class="bar-positive" id="ordersh">
+		<a href="#/tab/person"><i class="ion-ios-arrow-left"></i></a>
+		<h1 class="title">我的地址</h1>
+		<i class="ion-ios-search"></i>
+		<i class="ion-ios-more-outline"></i>
+	</ion-header-bar>
+	<ion-content>
+		<ion-list id="addressList">
+			<ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="(i,address) in addresss" type="item-text-wrap">
+				<h2><span ng-model="item.otherContact">{{address.uname}}</span><span ng-model="address.otherBusinessTel">{{address.tel}}</span></h2>
+				<p ng-model="item.otherAddre">{{address.address}}</p>
+				<div>
+					<span><input type="radio" name="address"/> 设为默认</span>
+					<span><span  ng-click="update(address,i)" ><i class="ion-ios-compose-outline"></i>编辑</span><span id="shac" ng-click="remove(i)"><i class="ion-ios-trash-outline dele" ></i>删除</span></span>
+				</div>
+			</ion-item>
+
+		</ion-list>
+
+		<form ng-show="isShow" novalidate name="myform" id="form-w">
+			<div id="form-we">
+				<div id="form-wee">
+					<input type="text" name="uname" required ng-model="curStudent.uname" id="form-inp" placeholder="姓名">
+					<input type="text" ng-model="curStudent.tel" id="form-inp" placeholder="联系电话">
+					<input type="text" ng-model="curStudent.address" id="form-inp" placeholder="收货地址">
+					<button id="baoc" ng-click="save()" ng-disabled="myform.$invalid">保存</button>
+					<button id="qux" ng-click="cancel()">取消</button>
+				</div>
+			</div>
+		</form>
+		<h1 class="title button news" style="width: 80%;background-color: #FD6363;color: white;margin: 3rem auto;display: block;" ng-click="add()">添加新地址</h1>
+
+	</ion-content>
+</ion-view>

@@ -1,0 +1,150 @@
+#main {
+	margin-top: 50px;
+}
+
+#first {
+	width: 100%;
+	background-color: black;
+	color: white;
+	height: 5rem;
+	line-height: 5rem;
+}
+
+#first>a {
+	display: inline-block;
+	background: url(../images/halloweenImages/hal_1.png) no-repeat center;
+	width: 15%;
+	height: 5rem;
+	background-size: 2rem;
+	float: left;
+}
+
+#first>span {
+	font-size: 2rem;
+	text-align: center;
+	display: block;
+	padding-right: 15%;
+}
+
+#content {
+	width: 100%;
+	text-align: center;
+}
+
+#content>* {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.banner {
+	width: 100%;
+}
+
+.banner>img {
+	width: 100%;
+}
+
+#content>h2 {
+	font-size: 1.4rem;
+	line-height: 3rem;
+	font-weight: normal;
+	color: black;
+}
+
+#content>p {
+	font-size: 1rem;
+	line-height: 1.2rem;
+	color: #999999;
+}
+
+.img {
+	padding-top: 0.5rem;
+}
+
+.img>img {
+	width: 100%;
+}
+
+#content>p.money {
+	font-size: 1rem;
+	color: #e4393c;
+	line-height: 3rem;
+}
+
+#content>p.money>span {
+	text-decoration: line-through;
+	font-size: 0.8rem;
+	line-height: 1.5rem;
+	color: #999999;
+	padding-left: 0.5rem;
+}
+
+#content>a {
+	display: block;
+	width: 30%;
+	margin: 0 auto;
+	height: 2.4rem;
+	background-color: #e4652b;
+	color: white;
+	font-size: 1.2rem;
+	line-height: 2.4rem;
+	margin-bottom: 2rem;
+	border-radius: 0.5rem;
+}
+
+#content>span {
+	display: block;
+	color: #999999;
+	font-size: 1.7rem;
+	height: 4rem;
+	line-height: 4rem;
+	width: 50%;
+	background: url(../images/halloweenImages/hal_5.png) no-repeat center;
+	background-size: 15rem;
+}
+
+
+/*头部*/
+
+.returnpages3 .ion-ios-arrow-left {
+	color: #fff;
+	font-size: 2.7rem;
+	height: 50px;
+	line-height: 50px;
+	margin-left: 15px;
+}
+
+.header2 {
+	height: 50px;
+	background-color: #000;
+	width: 100%;
+	position: relative;
+	z-index: 100;
+}
+
+.header2>* {
+	float: left;
+}
+
+.header2>span {
+	display: block;
+	width: 115px;
+	color: #fff;
+	font-size: 1.4rem;
+	line-height: 50px;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+}
+
+.footer2 {
+	width: 100%;
+	height: 5rem;
+	margin-top: 2rem;
+}
+
+.footer2 img {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 1rem;
+}

@@ -1,0 +1,93 @@
+<ion-view hide-tabs="true">
+	<link rel="stylesheet" type="text/css" href="css/common.css"/>
+	
+	<style type="text/css">
+		#set_back{
+			color: white;			
+			font-size: 1.3rem;
+			line-height: 2rem;	
+		}
+		.set_article {
+			width: 95%;
+			margin: 0 auto;
+		}
+		
+		.set_article input {
+			width: 100%;
+			height: 4rem;
+			font-size: 1rem;
+		}
+		
+		.set_article #yzm {
+			border: 1px solid #b5b5b5;
+			display: inline-block;
+			width: 8rem;
+			height: 2.5rem;
+			font-size: 1rem;
+			text-align: center;
+			line-height: 2.5rem;
+			background: transparent;
+			cursor: pointer;
+		}
+		.set_article p{
+			display: none;
+			color: red;
+		}
+		.item {
+			border-left: none;
+			border-right: none;
+		}
+		
+		.set_submit {
+			width: 80%;
+			margin: 10% 0 0 10%;
+		}
+		
+		.set_submit input {
+			width: 100%;
+			height: 3rem;
+			background: #CCCCCC;
+			border: none;
+			border-radius: 3px;
+			font-size: 1.2rem;
+			color: #FFFFFF;
+		}
+	</style>
+
+	
+		
+			<div class="header2">
+
+		<a href="#/tab/set" class="returnpages3"><i class="ion-ios-arrow-left"></i></a>
+		<span>修改密码</span>
+	</div>
+	
+	
+	
+	
+	<ion-content>
+		<div id="alltop">
+
+		</div>
+
+		<div class="set_article">
+			<div class="item item-input">
+				<input type="text" placeholder="输入手机号" required class="phone_number">
+				<p class="num_err">输入内容不正确</p>
+			</div>
+			<div class="item item-input">
+				<input type="number" placeholder="输入验证码" class="sy_yzm">
+				<p class="yzm_err">验证码输入错误</p><i id="yzm" ng-click="yzm()">获取验证码</i>
+			</div>
+			<div class="item item-input">
+				<input type="password" placeholder="输入新密码" class="new_pwd">
+				<p class="pwd_err">有英文有数字大于6位</p>
+				<div ng-click="eye()"><img src="img/meImages/set_eye.png" alt="" /></div>
+			</div>
+		</div>
+		<div class="set_submit" ng-click="tj()">
+			<input type="submit" value="提交" />
+		</div>
+
+	</ion-content>
+</ion-view>

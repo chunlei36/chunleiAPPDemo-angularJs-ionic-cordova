@@ -1,0 +1,74 @@
+<ion-view view-title="我的" hide-tabs="true">
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/shopqg.css" />
+	<div class="header1">
+
+		<a ng-click="latepages()" class="returnpages2"><i class="ion-ios-arrow-left"></i></a>
+		<span>提交订单</span>
+	</div>
+	<ion-content>
+		<div class="articel2">
+			<div class="tjdan1">
+				<div class="tjdan1_1 clearfloat">
+					<h2 class="tjdan_h2">{{paytil}}</h2>
+					<span>￥{{payprice}}</span>
+
+				</div>
+				<div class="tjdan1_2 clearfloat">
+					<h2 class="tjdan_h2">数量</h2>
+					<div class="tj_btn">
+						<div class="tj_btn_jian" ng-click="btn_jian()">
+							­—
+						</div>
+						<div class="tj_btn_num">
+							1
+						</div>
+						<div class="tj_btn_add" ng-click="btn_add()">
+							+
+						</div>
+
+					</div>
+				</div>
+				<div class="tjdan1_1 clearfloat">
+					<h2 class="tjdan_h2">小计</h2>
+					<span class="tjdan1_1_xj">￥{{paytilnew}}</span>
+				</div>
+
+			</div>
+
+			<div class="tjdan2">
+				<div class="tjdan2_1 clearfloat">
+
+					<h2 class="tjdan_h2">抵用券</h2>
+					<span>无</span>
+				</div>
+				<div class="tjdan2_1 clearfloat">
+					<h2 class="tjdan_h2">总价</h2>
+					<span><b>(优惠：￥0)</b> ￥{{paytilnew}}</span>
+
+				</div>
+
+			</div>
+			<div class="tjdan3">
+				<input type="number" placeholder=" &nbsp;&nbsp; 联系电话" />
+
+			</div>
+
+		</div>
+
+	</ion-content>
+	<div class="footer_tj0">
+
+		<ion-footer-bar>
+			<a class="title footer_tj1" href="#/tab/shoptj/{{paytilnew}}">提交订单</a>
+		</ion-footer-bar>
+
+	</div>
+
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$('.tj_btn_add').click(function() {
+			console.log($('.tj_btn_num').text())
+		})
+	</script>
+</ion-view>

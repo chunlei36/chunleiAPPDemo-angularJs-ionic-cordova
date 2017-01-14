@@ -1,0 +1,42 @@
+#notifyList1 .list,#notifyList2 .list{
+	margin-top: 1rem;
+}
+#notifyList1 .item-avatar>p,#notifyList2 .item-avatar>p{
+	text-align: center;
+}
+#notifyList1 .item,#notifyList2 .item{
+	border-color: #EEEEEE;
+	border-radius:1rem ;
+	box-shadow: 0.1rem 0.1rem 0.1rem #EEEEEE;
+}
+#notifyList1 img,#notifyList2 img{
+	position: relative;
+	top: 1rem;
+	max-height: 6rem;
+	max-width: 6rem;
+	height: 100%;
+	width: 100%;
+}
+#notifyList1 span,#notifyList2 span{
+	position: relative;
+	left: 7rem;
+	top: -2rem;
+}
+#notifyList1 .item-avatar h2,#notifyList2 .item-avatar h2{
+	margin-top: 1rem;
+}
+#notifyList1 .item-avatar h2 i{
+	margin-left: 2rem;
+	font-size: 0.5rem;
+	color: #666;
+}
+#notifyList2 .item-avatar h2{
+	text-align: center;
+	margin-left: 2rem;
+}
+#notifyList1 .item-avatar,#notifyList2 .item-avatar{
+	width: 90%;
+	padding-left: 1.4rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+}

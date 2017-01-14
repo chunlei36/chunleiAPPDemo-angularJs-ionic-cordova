@@ -1,0 +1,106 @@
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.box {
+		width: 100%;
+	}
+	
+	#header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: transparent;
+	}
+	
+	#header a {
+		font-size: 1.4rem;
+		color: #fd6363;
+	}
+	
+	#searchIcon {
+		display: inline-block;
+		border-radius: 50%;
+		border: 0.1rem solid #fd6363;
+		background-color: white;
+		width: 2rem;
+		height: 2rem;
+		line-height: 2rem;
+		text-align: center;
+		position: absolute;
+		z-index: 100;
+	}
+	
+	#header #scrollInp {
+		display: inline-block;
+		background-color: #eee;
+		width: 87%;
+		height: 2rem;
+		border-radius: 1rem;
+		text-align: center;
+		margin-left: -95%;
+	}
+	
+	#carBox {
+		width: 2rem;
+		height: 2rem;
+		line-height: 2rem;
+		border-radius: 50%;
+		text-align: center;
+		position: absolute;
+		right: 0.5rem;
+		border: 1px solid #fd6363;
+	}
+	
+	#logoBox {
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		line-height: 1rem;
+		color: #fd6363;
+		font-size: 1rem;
+		margin-left: -15%;
+		opacity: 1;
+	}
+	
+	#logoBox img {
+		/*position: absolute;*/
+		width: 2rem;
+		height: 2rem;
+	}
+	
+	#logoBox span {
+		position: absolute;
+		top: 0.5rem;
+	}
+	
+	#goods {
+		border: none;
+		padding: 1rem 0.5rem;
+		text-align: center;
+		border-top: 0.1rem solid #eee;
+	}
+	
+	.item-content {
+		padding: 0!important;
+	}
+	
+	#goods img {
+		width: 100%;
+		margin-bottom: 0.3rem;
+	}
+	
+	#goods h5 {
+		color: #333;
+	}
+	
+	#goods p {
+		color: #666;
+	}
+	
+	#goods p>span {
+		color: #fd6363;
+	}
+	

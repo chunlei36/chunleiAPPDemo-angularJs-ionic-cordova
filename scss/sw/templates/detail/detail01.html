@@ -1,0 +1,71 @@
+<ion-view hide-tabs>
+	<link rel="stylesheet" type="text/css" href="css/detail/detail.css" />
+	<!--头部-->
+	<ion-header-bar>
+		<div id="header02">
+			<a class="icon ion-ios-arrow-left" href="" onclick="history.go(-1)"></a>
+		</div>
+		<div class="title">物品详情</div>
+	</ion-header-bar>
+	<!--内容-->
+	<ion-content class="padding" on-swipe-right="onSwipeRight()">
+		<!--商品主要介绍-->
+		<div id="detail01_banner">
+			<img class="sellImg" src="img/indexImages/{{info.info1}}" />
+			<p>{{info.info2}}</p>
+			<p>{{info.info3}}</p>
+		</div>
+		<p id="intro">{{info.info4}}</p>
+		<p id="price">
+			<img src="img/detailimages/{{info.info5}}" /> &nbsp;&nbsp;&nbsp;{{info.info6}}&nbsp;&nbsp;&nbsp; ¥ <span>{{info.info7}}</span>
+			<a href="tel:15617157662" style="float: right;margin-right: 1rem;" class="button"><i class="icon ion-iphone"></i>&nbsp;&nbsp;联系客服</a>
+		</p>
+		<!--块级 分割-->
+		<div class="hr"></div>
+		<!--相关文章-->
+		<p id="anoutTxt">相关文章</p>
+		<a href="#/tab/index01" class="aboutArt">
+			<img src="img/indexImages/indexImg01.jpeg" alt="" />
+			<div>
+				<h5>果粉的颜色之旅-银白与鲜红的美妙碰撞</h5>
+				<p class="name">Tom&nbsp;&nbsp;|&nbsp;&nbsp; <span> 全新</span></p>
+			</div>
+			</div>
+			<a href="#/tab/index02" class="aboutArt">
+				<img src="img/indexImages/indexImg02.jpeg" alt="" />
+				<div>
+					<h5>十多年学生党的学习用品使用报告</h5>
+					<p class="name">Jerry&nbsp;&nbsp;|&nbsp;&nbsp; <span> 全新</span></p>
+				</div>
+			</a>
+			<a href="#/tab/index03" class="aboutArt">
+				<img src="img/indexImages/indexImg03.jpeg" alt="" />
+				<div>
+					<h5>超实用的旅行小物，帮你分分钟摆脱尴尬！</h5>
+					<p class="name">Tom&nbsp;&nbsp;|&nbsp;&nbsp; <span> 九成新</span></p>
+				</div>
+			</a>
+			<a href="#/tab/index04" class="aboutArt">
+				<img src="img/indexImages/indexImg04.jpeg" alt="" />
+				<div>
+					<h5>关于索尼，不只有产品，还有情怀</h5>
+					<p class="name">Jerry&nbsp;&nbsp;|&nbsp;&nbsp; <span> 八成新</span></p>
+				</div>
+			</a>
+	</ion-content>
+	<ion-footer-bar style="padding: 0;background-image: none;background-color: #F8F8F8;">
+		<div class="row">
+			<div class="col">
+				<a href=""><i class="icon ion-android-share"></i>&nbsp;&nbsp;分享</a>
+			</div>
+			<div class="col" id="likeBtn">
+				<a href="" ng-click="like()"><i class="icon ion-android-favorite"></i>&nbsp;&nbsp;喜欢</a>
+			</div>
+			<div class="col" id="buyBtn">
+				<a href="#/tab/pay" ng-click="toNext(info)"><i class="icon ion-bag"></i>&nbsp;&nbsp;购买</a>
+			</div>
+		</div>
+
+		<script src="js/detail.js" type="text/javascript" charset="utf-8"></script>
+	</ion-footer-bar>
+</ion-view>

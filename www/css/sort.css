@@ -1,0 +1,221 @@
+/*头部*/
+.nearfood1 {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background-color: #000;
+}
+
+.nearfood1 h1 {
+	color: #fff;
+	font-size: 1.6rem;
+	line-height: 50px;
+	z-index: 100;
+}
+.classify_bar{
+	padding: 0;
+}
+
+#first {
+	width: 100%;
+	background-color: black;
+	color: white;
+	height: 5rem;
+	line-height: 5rem;
+}
+
+#first>a {
+	display: inline-block;
+	background: url(../img/sortImages/hal_1.png) no-repeat center;
+	width: 15%;
+	height: 5rem;
+	background-size: 2rem;
+	float: left;
+}
+
+#first>span {
+	font-size: 2rem;
+	text-align: center;
+	display: block;
+	padding-right: 15%;
+}
+
+.list0 {
+	width: 100%;
+}
+
+.list0>a {
+	display: inline-block;
+	color: #bfbfbf;
+	font-size: 1.2rem;
+	width: 32.5%;
+	height: 3.7rem;
+	line-height: 4rem;
+	text-align: center;
+	border-bottom: 3px solid transparent;
+}
+
+.list0>a.on {
+	color: black;
+	border-bottom: 3px solid #e4652b;
+}
+
+.banner {
+	width: 100%;
+	position: relative;
+	height: 12rem;
+}
+
+.banner>img {
+	width: 100%;
+	height: 100%;
+}
+
+.word {
+	width: 70%;
+	height: 8.6rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	color: white;
+	text-align: center;
+	margin-left: -35%;
+	margin-top: -4.3rem;
+	background: url(../img/sortImages/sor_2.png) no-repeat;
+	background-size:100% 100%;
+}
+
+.word>h3 {
+	font-size: 1.2rem;
+	color: #fff;
+	text-align: center;
+	margin-top: -8px;
+	
+	
+}
+
+.word>h2 {
+	font-size: 1.6rem;
+	padding-top: 1.3rem;
+	color: #fff;
+	
+}
+
+.word>p {
+	font-size: 0.8rem;
+	line-height: 3rem;
+	color: #eee;
+	font-weight: bold;
+}
+
+.cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.2);
+}
+#content {
+	width: 100%;
+	margin-top: 0.8rem;
+}
+
+.floor {
+	width: 100%;
+	margin: 0.8rem auto;
+}
+
+.long {
+	float: left;
+	width: 47%;
+	margin: 0 1.5%;
+	height: 15rem;
+	position: relative;
+}
+
+.long>img {
+	width: 100%;
+	height: 100%;
+}
+
+.long>.introduce {
+	display: block;
+	
+	width: 100%;
+	height: 35%;
+	text-align: center;
+	position: absolute;
+	color: white;
+	bottom: 0;
+}
+
+.introduce>h3 {
+	font-size: 1rem;
+	line-height: 1.2rem;
+	padding-top: 1rem;
+	color: white;
+	
+}
+
+.introduce>p {
+	font-size: 0.8rem;
+	line-height: 1.4rem;
+	color: #eee;
+}
+
+.shade {
+	position: absolute;
+	width: 100%;
+	height: 35%;
+	bottom: 0;
+	background-color: black;
+	opacity: 0.4;
+}
+
+.short {
+	float: left;
+	width: 47%;
+	margin: 0 1.5%;
+	height: 15rem;
+}
+
+.short>img {
+	width: 100%;
+	height: 9.8rem;
+}
+
+.describe {
+	display: block;
+	
+	text-align: center;
+}
+
+.describe>h3 {
+	font-size: 1rem;
+	line-height: 1.2rem;
+	padding-top: 1rem;
+	color: #000;
+}
+
+.describe>p {
+	font-size: 0.8rem;
+	line-height: 1.4rem;
+	color: #333;
+}
+
+.delicious>span {
+	margin: 0 auto;
+	text-align: center;
+	display: block;
+	color: #999999;
+	font-size: 1.7rem;
+	height: 4rem;
+	line-height: 4rem;
+	width: 50%;
+	background: url(../img/halloweenImages/hal_5.png) no-repeat center;
+	background-size: 15rem;
+}
+#page2,#page3{
+	display: none;
+}

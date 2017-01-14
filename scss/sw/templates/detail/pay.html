@@ -1,0 +1,30 @@
+<ion-view hide-tabs="true" view-title="{{investname}}">
+	<ion-header-bar>
+		<a onclick="history.go(-1)" class="button icon-left ion-ios-arrow-left button-clear button-dark"></a>
+		<p class="title">核对订单</p>
+	</ion-header-bar>
+	<ion-content>
+		<div class="list list-inset">
+			<div class="item" style="text-align: center;color:lightsalmon;">
+				¥ <span style="font-size: 2rem;">{{price}}</span>
+			</div>
+		</div>
+		<ul class="list">
+			<li class="item">
+				收货人：<span>Tom</span>
+			</li>
+			<li class="item">
+				手机号：<span>12345678</span>
+			</li>
+			<li class="item">
+				收货地址：<span>北京</span>
+			</li>
+			<li class="item">
+				支付方式：<span>在线支付</span>
+			</li>
+		</ul>
+		<div class="padding">
+			<button class="button button-block" style="background-color: #FD6363;color: white;" ng-click="submit()">提交订单</button>
+		</div>
+	</ion-content>
+</ion-view>

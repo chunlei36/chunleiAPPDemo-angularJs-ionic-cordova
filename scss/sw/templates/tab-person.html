@@ -1,0 +1,29 @@
+<ion-view view-title="Person">
+	<ion-content>
+		<link rel="stylesheet" type="text/css" href="css/person.css" />
+		<!--头像-->
+		<div id="avatar" class="padding">
+
+		</div>
+		<div id="nav" class="padding">
+			<!--导航栏-->
+			<div id="des">
+				<i><a href="person/setup"></a></i>
+			</div>
+			<div id="avatar1">
+				<i></i>
+				<p>{{ava}}</p>
+			</div>
+		</div>
+		<ion-list id="personList">
+	     	<ion-item class="item-remove-animate item-avatar item-icon-right" 
+	      	ng-repeat="person in persons" type="item-text-wrap" 
+	      	href="#/tab/{{person.id}}">
+	        <h2>{{person.name}}</h2>
+	        <i class="{{person.icon}}" id="i1"></i>
+	        <i class="icon ion-chevron-right icon-accessory"></i>
+	      </ion-item>
+	    </ion-list>
+	</ion-content>
+	
+</ion-view>

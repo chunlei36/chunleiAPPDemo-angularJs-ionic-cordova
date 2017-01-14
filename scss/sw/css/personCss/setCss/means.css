@@ -1,0 +1,30 @@
+#meansList .list {
+	margin-top: 2rem;
+}
+
+#meansList .item-avatar {
+	height: 8rem;
+}
+
+#meansList a{
+	margin-top:0.5rem ;
+	padding: 1.2rem 4.9rem 1.6rem 2rem !important ;
+	position: relative;
+}
+#meansList h2{
+	font-size: 1rem;
+}
+#meansList .item-avatar{
+	height: 3rem;
+}
+#meansList i{
+	top:-0.5rem
+}
+#meansList #i1{
+	font-size: 1.8rem;
+	position: absolute;
+	margin-bottom: 5rem;
+	top: 1rem;
+	left: 1rem;
+	color: #999999;
+}

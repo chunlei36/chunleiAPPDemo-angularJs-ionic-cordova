@@ -1,0 +1,35 @@
+#newstList .list {
+	margin-top: 2rem;
+}
+
+#newstList .item-avatar {
+	height: 8rem;
+}
+
+#newstList a{
+	margin-top:0.5rem ;
+	padding: 1.2rem 4.9rem 1.6rem 2rem !important ;
+	position: relative;
+}
+#newstList h2{
+	margin-top: 0.7rem;
+	font-size: 1rem;
+}
+#newstList .item-avatar{
+	padding-left: 2rem!important;
+	height: 2rem;
+}
+#newstList .item-toggle .toggle{
+	margin-top: 0.3rem;
+}
+#newstList i{
+	top:-0.5rem
+}
+#newstList #i1{
+	font-size: 1.8rem;
+	position: absolute;
+	margin-bottom: 5rem;
+	top: 1rem;
+	left: 1rem;
+	color: #999999;
+}

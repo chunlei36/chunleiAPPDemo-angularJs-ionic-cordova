@@ -1,0 +1,81 @@
+/*主页*/
+
+/*头部*/
+#tabAccount .bar.bar-positive {
+	background-color: #F1F2F3;
+	height: 4rem;
+	padding-top: 1rem;
+	background-image: none;
+}
+
+#tabAccount .bar.bar-positive .title {
+	margin-top: 0.6rem;
+	left: 0!important;
+	margin-left: 0 !important;
+	color: #262626;
+}
+#tabAccount .bar.bar-positive a{
+	width: 3rem;
+}
+#tabAccount .bar.bar-positive i {
+	color: #262626;
+	font-size: 2rem;
+	margin-left: 0.5rem;
+	
+}
+
+#tabAccount .bar.bar-positive i:nth-child(3) {
+	font-size: 1rem;
+	line-height: 2rem;
+	margin-left: 13rem;
+}
+#tabAccount .bar.bar-positive i:last-child{
+	margin-left: 1rem;
+}
+/*列表*/
+#accoutList1 .list,#accoutList2 .list{
+	margin-top:2rem ;
+}
+#accoutList1 .item-avatar ,#accoutList2 .item-avatar{
+	padding: 0.8rem 1rem 0.3rem;
+}
+#accoutList1 .item-avatar .item-content,#accoutList2 .item-avatar .item-content{
+	padding-left: 6rem!important;
+}
+#accoutList1 .item-avatar .item-content > img:first-child,#accoutList2 .item-avatar .item-content > img:first-child{
+	left: 0rem;
+	max-height: 4rem;
+	max-width: 4rem;
+}
+/*尾部*/
+#accountf {
+	height: 4rem;
+}
+#accountf span{
+	margin: 0 auto;
+}
+#accountf span .button{
+	position: relative;
+	top: -1.3rem;
+	border: none;
+	background-color: transparent;
+	outline: none;
+}
+#accountf span .button i{
+	position: relative;
+	top: 1rem;
+}
+#accountf span i{
+	font-size: 2.5rem;
+}
+#accountf span:first-child i,#accountf span:first-child p{
+	color: #FE625F;
+}
+#accountf span p{
+	text-align: center;
+	font-size:0.8rem ;
+}
+
+.avat{
+	top: 0!important;
+}

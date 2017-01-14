@@ -1,0 +1,64 @@
+<ion-view view-title="我的" hide-tabs="true">
+
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/shoptj.css" />
+	<div class="header1">
+
+		<a ng-click="latepages()" class="returnpages2"><i class="ion-ios-arrow-left"></i></a>
+		<span>支付订单</span>
+	</div>
+	<ion-content>
+		<div class="articel22">
+			<div class="shoptjcss">
+				<div class="shoptjcss_1">
+					<img src="{{paygoods2.img}}" alt="" />
+				</div>
+				<div class="shoptjcss_2">
+					<h2>￥{{priceall}}</h2>
+					<span>{{paygoods2.h2}}</span>
+				</div>
+
+			</div>
+			<div class="shoptjcss3">
+
+				<ion-list>
+					<ion-radio ng-model="choice" ng-value="'A'">
+						<img src="img/ylicon.png" alt="" />
+						<div>
+							<h2>&nbsp;&nbsp;银行卡支付</h2>
+							<span>安全急速支付，无需开通网银</span>
+						</div>
+					</ion-radio>
+					<ion-radio ng-model="choice" ng-value="'A'"> 
+						<img src="img/wxicon.png" alt="" />
+						<div>
+
+							<h2>&nbsp;&nbsp;微信支付</h2>
+							<span>推荐安装微信5.0及以上用户使用</span>
+						</div>
+					</ion-radio>
+					<ion-radio ng-model="choice" ng-value="'C'"> 
+						<img src="img/zfbicon.png" alt="" />
+						<div>
+							<h2>&nbsp;&nbsp;支付宝支付</h2>
+							<span>推荐有支付宝账号的用户使用</span>
+						</div>
+					</ion-radio>
+				</ion-list>
+			</div>
+			<br /><br />
+
+		</div>
+		<div class="footer_tj0">
+
+			<a class="title footer_tj1" href="#/tab/404pages">确认支付￥{{priceall}}</a>
+
+		</div>
+	</ion-content>
+
+	<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	</script>
+</ion-view>
+
+
